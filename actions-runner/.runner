@@ -1,0 +1,9 @@
+﻿{
+  "agentId": 2,
+  "agentName": "DESKTOP-FCS2CAO",
+  "poolId": 1,
+  "poolName": "Default",
+  "serverUrl": "https://pipelines.actions.githubusercontent.com/4yCUMMnwjiVUyfp6wptLWCOLAo1f3merRRaLvjn4BIbzzClXZG",
+  "gitHubUrl": "https://github.com/Haider531/time-tracker",
+  "workFolder": "_work"
+}
