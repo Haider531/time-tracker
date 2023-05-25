@@ -1,0 +1,3086 @@
+[2023-05-25 14:38:00Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2023-05-25 14:38:00Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-25 14:38:00Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-25 14:38:00Z INFO HostContext] Well known config file 'Credentials': 'C:\time-tracker\actions-runner\.credentials'
+[2023-05-25 14:38:01Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-25 14:38:01Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-25 14:38:01Z INFO HostContext] Well known config file 'Runner': 'C:\time-tracker\actions-runner\.runner'
+[2023-05-25 14:38:01Z INFO Worker] Version: 2.304.0
+[2023-05-25 14:38:01Z INFO Worker] Commit: 9ef4121b5b31ee5c03b7770288213d741081f747
+[2023-05-25 14:38:01Z INFO Worker] Culture: en-US
+[2023-05-25 14:38:01Z INFO Worker] UI Culture: en-US
+[2023-05-25 14:38:01Z INFO Worker] Waiting to receive the job message from the channel.
+[2023-05-25 14:38:01Z INFO ProcessChannel] Receiving message of length 21702, with hash 'a9e9d436c5e937d3153d35bf06b3a48c788b234433d48fe95e1208fc4b28027a'
+[2023-05-25 14:38:01Z INFO Worker] Message received.
+[2023-05-25 14:38:01Z INFO Worker] Job message:
+ {
+  "fileTable": [
+    ".github/workflows/node.js.yml"
+  ],
+  "mask": [
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    }
+  ],
+  "steps": [
+    {
+      "type": "action",
+      "reference": {
+        "type": "repository",
+        "name": "actions/checkout",
+        "ref": "v3",
+        "repositoryType": "GitHub",
+        "path": ""
+      },
+      "contextName": "__actions_checkout",
+      "condition": "success()",
+      "id": "c28f0f2d-4c36-5b18-4fd9-c2e00abe08ba",
+      "name": "__actions_checkout"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "repository",
+        "name": "actions/setup-node",
+        "ref": "v3",
+        "repositoryType": "GitHub",
+        "path": ""
+      },
+      "displayNameToken": {
+        "type": 3,
+        "file": 1,
+        "line": 23,
+        "col": 13,
+        "expr": "format('Use Node.js {0}', matrix.node-version)"
+      },
+      "contextName": "__actions_setup-node",
+      "inputs": {
+        "type": 2,
+        "file": 1,
+        "line": 26,
+        "col": 9,
+        "map": [
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 26,
+              "col": 9,
+              "lit": "node-version"
+            },
+            "value": {
+              "type": 3,
+              "file": 1,
+              "line": 26,
+              "col": 23,
+              "expr": "matrix.node-version"
+            }
+          },
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 27,
+              "col": 9,
+              "lit": "cache"
+            },
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 27,
+              "col": 16,
+              "lit": "npm"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "ae961046-74db-5234-d521-c831e1629984",
+      "name": "__actions_setup-node"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "contextName": "__run",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 28,
+              "col": 12,
+              "lit": "npm i"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "b62fe02e-bef4-51fa-f31e-31f9f5a73bf7",
+      "name": "__run"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "contextName": "__run_2",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 29,
+              "col": 12,
+              "lit": "npm run build --if-present"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "2e2ba6b7-cce6-5aa9-0f48-93e10c5178e7",
+      "name": "__run_2"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "script"
+      },
+      "contextName": "__run_3",
+      "inputs": {
+        "type": 2,
+        "map": [
+          {
+            "key": "script",
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 30,
+              "col": 12,
+              "lit": "npm test"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "b5d80b4d-d330-5731-5147-068c3c28a6df",
+      "name": "__run_3"
+    }
+  ],
+  "variables": {
+    "system.isScheduled": {
+      "value": "False"
+    },
+    "system.servertype": {
+      "value": "Hosted"
+    },
+    "system.culture": {
+      "value": ""
+    },
+    "system.pipelineStartTime": {
+      "value": "2023-05-25 14:37:56+00:00"
+    },
+    "system.runner.lowdiskspacethreshold": {
+      "value": "100"
+    },
+    "DistributedTask.NewActionMetadata": {
+      "value": "true"
+    },
+    "DistributedTask.EnableCompositeActions": {
+      "value": "true"
+    },
+    "DistributedTask.EnhancedAnnotations": {
+      "value": "true"
+    },
+    "DistributedTask.UploadStepSummary": {
+      "value": "true"
+    },
+    "DistributedTask.AddWarningToNode12Action": {
+      "value": "true"
+    },
+    "DistributedTask.AllowRunnerContainerHooks": {
+      "value": "true"
+    },
+    "DistributedTask.DeprecateStepOutputCommands": {
+      "value": "true"
+    },
+    "system.teamProjectId": {
+      "value": "00000000-0000-0000-0000-000000000000"
+    },
+    "build.buildId": {
+      "value": "4"
+    },
+    "build.containerId": {
+      "value": "3138003"
+    },
+    "system.workflowFilePath": {
+      "value": ".github/workflows/node.js.yml"
+    },
+    "system.phaseDisplayName": {
+      "value": "build"
+    },
+    "system.phaseId": {
+      "value": "6884a131-87da-5381-61f3-d7acc3b91d76"
+    },
+    "system.phaseName": {
+      "value": "build"
+    },
+    "system.phaseAttempt": {
+      "value": "1"
+    },
+    "system.jobIdentifier": {
+      "value": "build._16_x"
+    },
+    "system.jobAttempt": {
+      "value": "1"
+    },
+    "System.JobPositionInPhase": {
+      "value": "1"
+    },
+    "System.TotalJobsInPhase": {
+      "value": "1"
+    },
+    "system.github.job": {
+      "value": "build"
+    },
+    "system.jobDisplayName": {
+      "value": "build (16.x)"
+    },
+    "system.jobId": {
+      "value": "c269f388-e93f-55df-e42c-8ad0a472b48b"
+    },
+    "system.jobName": {
+      "value": "_16_x"
+    },
+    "system.github.token.permissions": {
+      "value": "{\"Contents\":\"read\",\"Metadata\":\"read\",\"Packages\":\"read\"}"
+    },
+    "system.github.token": {
+      "value": "***",
+      "isSecret": true
+    },
+    "system.orchestrationId": {
+      "value": "4b0733ac-fe05-4fc9-806c-4990a1748034.build._16_x"
+    },
+    "system.runnerGroupName": {
+      "value": "Default"
+    }
+  },
+  "messageType": "PipelineAgentJobRequest",
+  "plan": {
+    "scopeIdentifier": "00000000-0000-0000-0000-000000000000",
+    "planType": "Actions",
+    "version": 31,
+    "planId": "4b0733ac-fe05-4fc9-806c-4990a1748034",
+    "planGroup": "Actions:00000000-0000-0000-0000-000000000000:1",
+    "artifactUri": "vstfs:///Build/Build/4",
+    "artifactLocation": null,
+    "definition": {
+      "_links": {},
+      "id": 3,
+      "name": "time-tracker"
+    },
+    "owner": {
+      "_links": {},
+      "id": 3,
+      "name": "Haider531"
+    }
+  },
+  "timeline": {
+    "id": "4b0733ac-fe05-4fc9-806c-4990a1748034",
+    "changeId": 0,
+    "location": null
+  },
+  "jobId": "c269f388-e93f-55df-e42c-8ad0a472b48b",
+  "jobDisplayName": "build (16.x)",
+  "jobName": "_16_x",
+  "requestId": 4,
+  "lockedUntil": "0001-01-01T00:00:00",
+  "resources": {
+    "endpoints": [
+      {
+        "data": {
+          "ServerId": "bc8a674e-c6b3-42c1-b536-588bdffada36",
+          "ServerName": "4yCUMMnwjiVUyfp6wptLWCOLAo1f3merRRaLvjn4BIbzzClXZG",
+          "CacheServerUrl": "https://artifactcache.actions.githubusercontent.com/4yCUMMnwjiVUyfp6wptLWCOLAo1f3merRRaLvjn4BIbzzClXZG/",
+          "FeedStreamUrl": "https://pipelines.actions.githubusercontent.com/4yCUMMnwjiVUyfp6wptLWCOLAo1f3merRRaLvjn4BIbzzClXZG/00000000-0000-0000-0000-000000000000/_apis/distributedtask/hubs/Actions/plans/4b0733ac-fe05-4fc9-806c-4990a1748034/timelines/4b0733ac-fe05-4fc9-806c-4990a1748034/records/c269f388-e93f-55df-e42c-8ad0a472b48b/feedstream?api-version=6.0-preview"
+        },
+        "name": "SystemVssConnection",
+        "url": "https://pipelines.actions.githubusercontent.com/4yCUMMnwjiVUyfp6wptLWCOLAo1f3merRRaLvjn4BIbzzClXZG/",
+        "authorization": {
+          "parameters": {
+            "AccessToken": ***
+          },
+          "scheme": "OAuth"
+        },
+        "isShared": false,
+        "isReady": true
+      }
+    ]
+  },
+  "contextData": {
+    "github": {
+      "t": 2,
+      "d": [
+        {
+          "k": "ref",
+          "v": "refs/heads/master"
+        },
+        {
+          "k": "sha",
+          "v": "9f6f2cc187c21b6478b6c49e648f7971fb3ff276"
+        },
+        {
+          "k": "repository",
+          "v": "Haider531/time-tracker"
+        },
+        {
+          "k": "repository_owner",
+          "v": "Haider531"
+        },
+        {
+          "k": "repository_owner_id",
+          "v": "109477355"
+        },
+        {
+          "k": "repositoryUrl",
+          "v": "git://github.com/Haider531/time-tracker.git"
+        },
+        {
+          "k": "run_id",
+          "v": "5081050710"
+        },
+        {
+          "k": "run_number",
+          "v": "3"
+        },
+        {
+          "k": "retention_days",
+          "v": "90"
+        },
+        {
+          "k": "run_attempt",
+          "v": "2"
+        },
+        {
+          "k": "artifact_cache_size_limit",
+          "v": "10"
+        },
+        {
+          "k": "repository_visibility",
+          "v": "public"
+        },
+        {
+          "k": "repository_id",
+          "v": "636669093"
+        },
+        {
+          "k": "actor_id",
+          "v": "109477355"
+        },
+        {
+          "k": "actor",
+          "v": "Haider531"
+        },
+        {
+          "k": "triggering_actor",
+          "v": "Haider531"
+        },
+        {
+          "k": "workflow",
+          "v": "Node.js CI"
+        },
+        {
+          "k": "head_ref",
+          "v": ""
+        },
+        {
+          "k": "base_ref",
+          "v": ""
+        },
+        {
+          "k": "event_name",
+          "v": "push"
+        },
+        {
+          "k": "event",
+          "v": {
+            "t": 2,
+            "d": [
+              {
+                "k": "after",
+                "v": "9f6f2cc187c21b6478b6c49e648f7971fb3ff276"
+              },
+              {
+                "k": "base_ref",
+                "v": null
+              },
+              {
+                "k": "before",
+                "v": "6929f507985abdef015843f7c401f6614503d5fa"
+              },
+              {
+                "k": "commits",
+                "v": {
+                  "t": 1,
+                  "a": [
+                    {
+                      "t": 2,
+                      "d": [
+                        {
+                          "k": "author",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "haiderimtiaz531@gmail.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "Haider531"
+                              },
+                              {
+                                "k": "username",
+                                "v": "Haider531"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "committer",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "haiderimtiaz531@gmail.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "Haider531"
+                              },
+                              {
+                                "k": "username",
+                                "v": "Haider531"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "distinct",
+                          "v": true
+                        },
+                        {
+                          "k": "id",
+                          "v": "9f6f2cc187c21b6478b6c49e648f7971fb3ff276"
+                        },
+                        {
+                          "k": "message",
+                          "v": "change"
+                        },
+                        {
+                          "k": "timestamp",
+                          "v": "2023-05-25T19:18:19+05:00"
+                        },
+                        {
+                          "k": "tree_id",
+                          "v": "08bdeea56a0a92da42e4b53cef89d87c471bcc02"
+                        },
+                        {
+                          "k": "url",
+                          "v": "https://github.com/Haider531/time-tracker/commit/9f6f2cc187c21b6478b6c49e648f7971fb3ff276"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "compare",
+                "v": "https://github.com/Haider531/time-tracker/compare/6929f507985a...9f6f2cc187c2"
+              },
+              {
+                "k": "created",
+                "v": false
+              },
+              {
+                "k": "deleted",
+                "v": false
+              },
+              {
+                "k": "forced",
+                "v": false
+              },
+              {
+                "k": "head_commit",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "author",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "email",
+                            "v": "haiderimtiaz531@gmail.com"
+                          },
+                          {
+                            "k": "name",
+                            "v": "Haider531"
+                          },
+                          {
+                            "k": "username",
+                            "v": "Haider531"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "committer",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "email",
+                            "v": "haiderimtiaz531@gmail.com"
+                          },
+                          {
+                            "k": "name",
+                            "v": "Haider531"
+                          },
+                          {
+                            "k": "username",
+                            "v": "Haider531"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "distinct",
+                      "v": true
+                    },
+                    {
+                      "k": "id",
+                      "v": "9f6f2cc187c21b6478b6c49e648f7971fb3ff276"
+                    },
+                    {
+                      "k": "message",
+                      "v": "change"
+                    },
+                    {
+                      "k": "timestamp",
+                      "v": "2023-05-25T19:18:19+05:00"
+                    },
+                    {
+                      "k": "tree_id",
+                      "v": "08bdeea56a0a92da42e4b53cef89d87c471bcc02"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://github.com/Haider531/time-tracker/commit/9f6f2cc187c21b6478b6c49e648f7971fb3ff276"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "pusher",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "email",
+                      "v": "109477355+Haider531@users.noreply.github.com"
+                    },
+                    {
+                      "k": "name",
+                      "v": "Haider531"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "ref",
+                "v": "refs/heads/master"
+              },
+              {
+                "k": "repository",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "allow_forking",
+                      "v": true
+                    },
+                    {
+                      "k": "archive_url",
+                      "v": "https://api.github.com/repos/Haider531/time-tracker/{archive_format}{/ref}"
+                    },
+                    {
+                      "k": "archived",
+                      "v": false
+                    },
+                    {
+                      "k": "assignees_url",
+                      "v": "https://api.github.com/repos/Haider531/time-tracker/assignees{/user}"
+                    },
+                    {
+                      "k": "blobs_url",
+                      "v": "https://api.github.com/repos/Haider531/time-tracker/git/blobs{/sha}"
+                    },
+                    {
+                      "k": "branches_url",
+                      "v": "https://api.github.com/repos/Haider531/time-tracker/branches{/branch}"
+                    },
+                    {
+                      "k": "clone_url",
+                      "v": "https://github.com/Haider531/time-tracker.git"
+                    },
+                    {
+                      "k": "collaborators_url",
+                      "v": "https://api.github.com/repos/Haider531/time-tracker/collaborators{/collaborator}"
+                    },
+                    {
+                      "k": "comments_url",
+                      "v": "https://api.github.com/repos/Haider531/time-tracker/comments{/number}"
+                    },
+                    {
+                      "k": "commits_url",
+                      "v": "https://api.github.com/repos/Haider531/time-tracker/commits{/sha}"
+                    },
+                    {
+                      "k": "compare_url",
+                      "v": "https://api.github.com/repos/Haider531/time-tracker/compare/{base}...{head}"
+                    },
+                    {
+                      "k": "contents_url",
+                      "v": "https://api.github.com/repos/Haider531/time-tracker/contents/{+path}"
+                    },
+                    {
+                      "k": "contributors_url",
+                      "v": "https://api.github.com/repos/Haider531/time-tracker/contributors"
+                    },
+                    {
+                      "k": "created_at",
+                      "v": 1683285831.0
+                    },
+                    {
+                      "k": "default_branch",
+                      "v": "master"
+                    },
+                    {
+                      "k": "deployments_url",
+                      "v": "https://api.github.com/repos/Haider531/time-tracker/deployments"
+                    },
+                    {
+                      "k": "description",
+                      "v": "Maven training - time tracker project"
+                    },
+                    {
+                      "k": "disabled",
+                      "v": false
+                    },
+                    {
+                      "k": "downloads_url",
+                      "v": "https://api.github.com/repos/Haider531/time-tracker/downloads"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/repos/Haider531/time-tracker/events"
+                    },
+                    {
+                      "k": "fork",
+                      "v": true
+                    },
+                    {
+                      "k": "forks",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_url",
+                      "v": "https://api.github.com/repos/Haider531/time-tracker/forks"
+                    },
+                    {
+                      "k": "full_name",
+                      "v": "Haider531/time-tracker"
+                    },
+                    {
+                      "k": "git_commits_url",
+                      "v": "https://api.github.com/repos/Haider531/time-tracker/git/commits{/sha}"
+                    },
+                    {
+                      "k": "git_refs_url",
+                      "v": "https://api.github.com/repos/Haider531/time-tracker/git/refs{/sha}"
+                    },
+                    {
+                      "k": "git_tags_url",
+                      "v": "https://api.github.com/repos/Haider531/time-tracker/git/tags{/sha}"
+                    },
+                    {
+                      "k": "git_url",
+                      "v": "git://github.com/Haider531/time-tracker.git"
+                    },
+                    {
+                      "k": "has_discussions",
+                      "v": false
+                    },
+                    {
+                      "k": "has_downloads",
+                      "v": true
+                    },
+                    {
+                      "k": "has_issues",
+                      "v": false
+                    },
+                    {
+                      "k": "has_pages",
+                      "v": false
+                    },
+                    {
+                      "k": "has_projects",
+                      "v": true
+                    },
+                    {
+                      "k": "has_wiki",
+                      "v": true
+                    },
+                    {
+                      "k": "homepage",
+                      "v": null
+                    },
+                    {
+                      "k": "hooks_url",
+                      "v": "https://api.github.com/repos/Haider531/time-tracker/hooks"
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/Haider531/time-tracker"
+                    },
+                    {
+                      "k": "id",
+                      "v": 636669093.0
+                    },
+                    {
+                      "k": "is_template",
+                      "v": false
+                    },
+                    {
+                      "k": "issue_comment_url",
+                      "v": "https://api.github.com/repos/Haider531/time-tracker/issues/comments{/number}"
+                    },
+                    {
+                      "k": "issue_events_url",
+                      "v": "https://api.github.com/repos/Haider531/time-tracker/issues/events{/number}"
+                    },
+                    {
+                      "k": "issues_url",
+                      "v": "https://api.github.com/repos/Haider531/time-tracker/issues{/number}"
+                    },
+                    {
+                      "k": "keys_url",
+                      "v": "https://api.github.com/repos/Haider531/time-tracker/keys{/key_id}"
+                    },
+                    {
+                      "k": "labels_url",
+                      "v": "https://api.github.com/repos/Haider531/time-tracker/labels{/name}"
+                    },
+                    {
+                      "k": "language",
+                      "v": "TypeScript"
+                    },
+                    {
+                      "k": "languages_url",
+                      "v": "https://api.github.com/repos/Haider531/time-tracker/languages"
+                    },
+                    {
+                      "k": "license",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "key",
+                            "v": "apache-2.0"
+                          },
+                          {
+                            "k": "name",
+                            "v": "Apache License 2.0"
+                          },
+                          {
+                            "k": "node_id",
+                            "v": "MDc6TGljZW5zZTI="
+                          },
+                          {
+                            "k": "spdx_id",
+                            "v": "Apache-2.0"
+                          },
+                          {
+                            "k": "url",
+                            "v": "https://api.github.com/licenses/apache-2.0"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "master_branch",
+                      "v": "master"
+                    },
+                    {
+                      "k": "merges_url",
+                      "v": "https://api.github.com/repos/Haider531/time-tracker/merges"
+                    },
+                    {
+                      "k": "milestones_url",
+                      "v": "https://api.github.com/repos/Haider531/time-tracker/milestones{/number}"
+                    },
+                    {
+                      "k": "mirror_url",
+                      "v": null
+                    },
+                    {
+                      "k": "name",
+                      "v": "time-tracker"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "R_kgDOJfLMpQ"
+                    },
+                    {
+                      "k": "notifications_url",
+                      "v": "https://api.github.com/repos/Haider531/time-tracker/notifications{?since,all,participating}"
+                    },
+                    {
+                      "k": "open_issues",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "open_issues_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "owner",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "avatar_url",
+                            "v": "https://avatars.githubusercontent.com/u/109477355?v=4"
+                          },
+                          {
+                            "k": "email",
+                            "v": "109477355+Haider531@users.noreply.github.com"
+                          },
+                          {
+                            "k": "events_url",
+                            "v": "https://api.github.com/users/Haider531/events{/privacy}"
+                          },
+                          {
+                            "k": "followers_url",
+                            "v": "https://api.github.com/users/Haider531/followers"
+                          },
+                          {
+                            "k": "following_url",
+                            "v": "https://api.github.com/users/Haider531/following{/other_user}"
+                          },
+                          {
+                            "k": "gists_url",
+                            "v": "https://api.github.com/users/Haider531/gists{/gist_id}"
+                          },
+                          {
+                            "k": "gravatar_id",
+                            "v": ""
+                          },
+                          {
+                            "k": "html_url",
+                            "v": "https://github.com/Haider531"
+                          },
+                          {
+                            "k": "id",
+                            "v": 109477355.0
+                          },
+                          {
+                            "k": "login",
+                            "v": "Haider531"
+                          },
+                          {
+                            "k": "name",
+                            "v": "Haider531"
+                          },
+                          {
+                            "k": "node_id",
+                            "v": "U_kgDOBoZ96w"
+                          },
+                          {
+                            "k": "organizations_url",
+                            "v": "https://api.github.com/users/Haider531/orgs"
+                          },
+                          {
+                            "k": "received_events_url",
+                            "v": "https://api.github.com/users/Haider531/received_events"
+                          },
+                          {
+                            "k": "repos_url",
+                            "v": "https://api.github.com/users/Haider531/repos"
+                          },
+                          {
+                            "k": "site_admin",
+                            "v": false
+                          },
+                          {
+                            "k": "starred_url",
+                            "v": "https://api.github.com/users/Haider531/starred{/owner}{/repo}"
+                          },
+                          {
+                            "k": "subscriptions_url",
+                            "v": "https://api.github.com/users/Haider531/subscriptions"
+                          },
+                          {
+                            "k": "type",
+                            "v": "User"
+                          },
+                          {
+                            "k": "url",
+                            "v": "https://api.github.com/users/Haider531"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "private",
+                      "v": false
+                    },
+                    {
+                      "k": "pulls_url",
+                      "v": "https://api.github.com/repos/Haider531/time-tracker/pulls{/number}"
+                    },
+                    {
+                      "k": "pushed_at",
+                      "v": 1685024306.0
+                    },
+                    {
+                      "k": "releases_url",
+                      "v": "https://api.github.com/repos/Haider531/time-tracker/releases{/id}"
+                    },
+                    {
+                      "k": "size",
+                      "v": 141405.0
+                    },
+                    {
+                      "k": "ssh_url",
+                      "v": "git@github.com:Haider531/time-tracker.git"
+                    },
+                    {
+                      "k": "stargazers",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "stargazers_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "stargazers_url",
+                      "v": "https://api.github.com/repos/Haider531/time-tracker/stargazers"
+                    },
+                    {
+                      "k": "statuses_url",
+                      "v": "https://api.github.com/repos/Haider531/time-tracker/statuses/{sha}"
+                    },
+                    {
+                      "k": "subscribers_url",
+                      "v": "https://api.github.com/repos/Haider531/time-tracker/subscribers"
+                    },
+                    {
+                      "k": "subscription_url",
+                      "v": "https://api.github.com/repos/Haider531/time-tracker/subscription"
+                    },
+                    {
+                      "k": "svn_url",
+                      "v": "https://github.com/Haider531/time-tracker"
+                    },
+                    {
+                      "k": "tags_url",
+                      "v": "https://api.github.com/repos/Haider531/time-tracker/tags"
+                    },
+                    {
+                      "k": "teams_url",
+                      "v": "https://api.github.com/repos/Haider531/time-tracker/teams"
+                    },
+                    {
+                      "k": "topics",
+                      "v": {
+                        "t": 1
+                      }
+                    },
+                    {
+                      "k": "trees_url",
+                      "v": "https://api.github.com/repos/Haider531/time-tracker/git/trees{/sha}"
+                    },
+                    {
+                      "k": "updated_at",
+                      "v": "2023-05-25T14:15:29Z"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://github.com/Haider531/time-tracker"
+                    },
+                    {
+                      "k": "visibility",
+                      "v": "public"
+                    },
+                    {
+                      "k": "watchers",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "watchers_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "web_commit_signoff_required",
+                      "v": false
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "sender",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "avatar_url",
+                      "v": "https://avatars.githubusercontent.com/u/109477355?v=4"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/users/Haider531/events{/privacy}"
+                    },
+                    {
+                      "k": "followers_url",
+                      "v": "https://api.github.com/users/Haider531/followers"
+                    },
+                    {
+                      "k": "following_url",
+                      "v": "https://api.github.com/users/Haider531/following{/other_user}"
+                    },
+                    {
+                      "k": "gists_url",
+                      "v": "https://api.github.com/users/Haider531/gists{/gist_id}"
+                    },
+                    {
+                      "k": "gravatar_id",
+                      "v": ""
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/Haider531"
+                    },
+                    {
+                      "k": "id",
+                      "v": 109477355.0
+                    },
+                    {
+                      "k": "login",
+                      "v": "Haider531"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "U_kgDOBoZ96w"
+                    },
+                    {
+                      "k": "organizations_url",
+                      "v": "https://api.github.com/users/Haider531/orgs"
+                    },
+                    {
+                      "k": "received_events_url",
+                      "v": "https://api.github.com/users/Haider531/received_events"
+                    },
+                    {
+                      "k": "repos_url",
+                      "v": "https://api.github.com/users/Haider531/repos"
+                    },
+                    {
+                      "k": "site_admin",
+                      "v": false
+                    },
+                    {
+                      "k": "starred_url",
+                      "v": "https://api.github.com/users/Haider531/starred{/owner}{/repo}"
+                    },
+                    {
+                      "k": "subscriptions_url",
+                      "v": "https://api.github.com/users/Haider531/subscriptions"
+                    },
+                    {
+                      "k": "type",
+                      "v": "User"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://api.github.com/users/Haider531"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "k": "server_url",
+          "v": "https://github.com"
+        },
+        {
+          "k": "api_url",
+          "v": "https://api.github.com"
+        },
+        {
+          "k": "graphql_url",
+          "v": "https://api.github.com/graphql"
+        },
+        {
+          "k": "ref_name",
+          "v": "master"
+        },
+        {
+          "k": "ref_protected",
+          "v": false
+        },
+        {
+          "k": "ref_type",
+          "v": "branch"
+        },
+        {
+          "k": "secret_source",
+          "v": "Actions"
+        },
+        {
+          "k": "workflow_ref",
+          "v": "Haider531/time-tracker/.github/workflows/node.js.yml@refs/heads/master"
+        },
+        {
+          "k": "workflow_sha",
+          "v": "9f6f2cc187c21b6478b6c49e648f7971fb3ff276"
+        }
+      ]
+    },
+    "partialrerun": true,
+    "needs": {
+      "t": 2
+    },
+    "vars": null,
+    "inputs": {
+      "t": 2
+    },
+    "matrix": {
+      "t": 2,
+      "d": [
+        {
+          "k": "node-version",
+          "v": "16.x"
+        }
+      ]
+    },
+    "strategy": {
+      "t": 2,
+      "d": [
+        {
+          "k": "fail-fast",
+          "v": true
+        },
+        {
+          "k": "job-index",
+          "v": 0.0
+        },
+        {
+          "k": "job-total",
+          "v": 1.0
+        },
+        {
+          "k": "max-parallel",
+          "v": 1.0
+        }
+      ]
+    }
+  }
+}
+[2023-05-25 14:38:01Z INFO JobRunner] Job ID c269f388-e93f-55df-e42c-8ad0a472b48b
+[2023-05-25 14:38:01Z INFO JobRunner] Creating job server with URL: https://pipelines.actions.githubusercontent.com/4yCUMMnwjiVUyfp6wptLWCOLAo1f3merRRaLvjn4BIbzzClXZG/
+[2023-05-25 14:38:01Z INFO ConfigurationStore] currentAssemblyLocation: C:\time-tracker\actions-runner\bin\Runner.Worker.dll
+[2023-05-25 14:38:01Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-25 14:38:01Z INFO ConfigurationStore] binPath: C:\time-tracker\actions-runner\bin
+[2023-05-25 14:38:01Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-25 14:38:01Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-25 14:38:01Z INFO ConfigurationStore] RootFolder: C:\time-tracker\actions-runner
+[2023-05-25 14:38:01Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-25 14:38:01Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-25 14:38:01Z INFO HostContext] Well known config file 'Runner': 'C:\time-tracker\actions-runner\.runner'
+[2023-05-25 14:38:01Z INFO ConfigurationStore] ConfigFilePath: C:\time-tracker\actions-runner\.runner
+[2023-05-25 14:38:01Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-25 14:38:01Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-25 14:38:01Z INFO HostContext] Well known config file 'Credentials': 'C:\time-tracker\actions-runner\.credentials'
+[2023-05-25 14:38:01Z INFO ConfigurationStore] CredFilePath: C:\time-tracker\actions-runner\.credentials
+[2023-05-25 14:38:01Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-25 14:38:01Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-25 14:38:01Z INFO HostContext] Well known config file 'MigratedCredentials': 'C:\time-tracker\actions-runner\.credentials_migrated'
+[2023-05-25 14:38:01Z INFO ConfigurationStore] MigratedCredFilePath: C:\time-tracker\actions-runner\.credentials_migrated
+[2023-05-25 14:38:01Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-25 14:38:01Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-25 14:38:01Z INFO HostContext] Well known config file 'Service': 'C:\time-tracker\actions-runner\.service'
+[2023-05-25 14:38:01Z INFO ConfigurationStore] ServiceConfigFilePath: C:\time-tracker\actions-runner\.service
+[2023-05-25 14:38:01Z INFO ConfigurationStore] Read setting file: 302 chars
+[2023-05-25 14:38:01Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2023-05-25 14:38:01Z INFO Worker] Listening for cancel message from the channel.
+[2023-05-25 14:38:01Z INFO Worker] Waiting for the job to complete or for a cancel message from the channel.
+[2023-05-25 14:38:03Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2023-05-25 14:38:03Z INFO JobServer] Creating websocket client ...wss://pipelines.actions.githubusercontent.com/4yCUMMnwjiVUyfp6wptLWCOLAo1f3merRRaLvjn4BIbzzClXZG/00000000-0000-0000-0000-000000000000/_apis/distributedtask/hubs/Actions/plans/4b0733ac-fe05-4fc9-806c-4990a1748034/timelines/4b0733ac-fe05-4fc9-806c-4990a1748034/records/c269f388-e93f-55df-e42c-8ad0a472b48b/feedstream?api-version=6.0-preview
+[2023-05-25 14:38:03Z INFO JobServer] Attempting to start websocket client with delay 00:00:00.
+[2023-05-25 14:38:03Z INFO JobServerQueue] Start process web console line queue.
+[2023-05-25 14:38:03Z INFO JobServerQueue] Start process file upload queue.
+[2023-05-25 14:38:03Z INFO JobServerQueue] Start results file upload queue.
+[2023-05-25 14:38:03Z INFO JobServerQueue] Starting results-based upload queue...
+[2023-05-25 14:38:03Z INFO JobServerQueue] Start process timeline update queue.
+[2023-05-25 14:38:03Z INFO ExecutionContext] Initialize GitHub context
+[2023-05-25 14:38:03Z INFO ExecutionContext] Initialize Env context
+[2023-05-25 14:38:03Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-25 14:38:03Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-25 14:38:03Z INFO HostContext] Well known directory 'Diag': 'C:\time-tracker\actions-runner\_diag'
+[2023-05-25 14:38:03Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-25 14:38:03Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-25 14:38:03Z INFO HostContext] Well known directory 'Diag': 'C:\time-tracker\actions-runner\_diag'
+[2023-05-25 14:38:03Z INFO JobRunner] Starting the job execution context.
+[2023-05-25 14:38:03Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-25 14:38:03Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-25 14:38:03Z INFO HostContext] Well known directory 'Work': 'C:\time-tracker\actions-runner\_work'
+[2023-05-25 14:38:03Z INFO JobRunner] Validating directory permissions for: 'C:\time-tracker\actions-runner\_work'
+[2023-05-25 14:38:03Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-25 14:38:03Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-25 14:38:03Z INFO HostContext] Well known directory 'Work': 'C:\time-tracker\actions-runner\_work'
+[2023-05-25 14:38:03Z INFO HostContext] Well known directory 'Tools': 'C:\time-tracker\actions-runner\_work\_tool'
+[2023-05-25 14:38:03Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-25 14:38:03Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-25 14:38:03Z INFO HostContext] Well known directory 'Work': 'C:\time-tracker\actions-runner\_work'
+[2023-05-25 14:38:03Z INFO HostContext] Well known directory 'Temp': 'C:\time-tracker\actions-runner\_work\_temp'
+[2023-05-25 14:38:03Z INFO JobRunner] Getting job extension.
+[2023-05-25 14:38:03Z INFO JobRunner] Initialize job. Getting all job steps.
+[2023-05-25 14:38:03Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-25 14:38:03Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-25 14:38:03Z INFO HostContext] Well known directory 'Diag': 'C:\time-tracker\actions-runner\_diag'
+[2023-05-25 14:38:03Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-25 14:38:03Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-25 14:38:03Z INFO HostContext] Well known directory 'Diag': 'C:\time-tracker\actions-runner\_diag'
+[2023-05-25 14:38:03Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-25 14:38:03Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-25 14:38:03Z INFO HostContext] Well known config file 'Credentials': 'C:\time-tracker\actions-runner\.credentials'
+[2023-05-25 14:38:03Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-25 14:38:03Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-25 14:38:03Z INFO HostContext] Well known config file 'SetupInfo': 'C:\time-tracker\actions-runner\.setup_info'
+[2023-05-25 14:38:03Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-25 14:38:03Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-25 14:38:03Z INFO HostContext] Well known directory 'Work': 'C:\time-tracker\actions-runner\_work'
+[2023-05-25 14:38:03Z INFO PipelineDirectoryManager] Loading tracking config if exists: C:\time-tracker\actions-runner\_work\_PipelineMapping\Haider531/time-tracker\PipelineFolder.json
+[2023-05-25 14:38:03Z INFO PipelineDirectoryManager] Updating job run properties.
+[2023-05-25 14:38:03Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-25 14:38:03Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-25 14:38:03Z INFO HostContext] Well known directory 'Work': 'C:\time-tracker\actions-runner\_work'
+[2023-05-25 14:38:03Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-25 14:38:03Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-25 14:38:03Z INFO HostContext] Well known directory 'Work': 'C:\time-tracker\actions-runner\_work'
+[2023-05-25 14:38:03Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-25 14:38:03Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-25 14:38:03Z INFO HostContext] Well known directory 'Work': 'C:\time-tracker\actions-runner\_work'
+[2023-05-25 14:38:03Z INFO JobExtension] Downloading actions
+[2023-05-25 14:38:03Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-25 14:38:03Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-25 14:38:03Z INFO HostContext] Well known directory 'Work': 'C:\time-tracker\actions-runner\_work'
+[2023-05-25 14:38:03Z INFO HostContext] Well known directory 'Actions': 'C:\time-tracker\actions-runner\_work\_actions'
+[2023-05-25 14:38:04Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-25 14:38:04Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-25 14:38:04Z INFO HostContext] Well known directory 'Work': 'C:\time-tracker\actions-runner\_work'
+[2023-05-25 14:38:04Z INFO HostContext] Well known directory 'Actions': 'C:\time-tracker\actions-runner\_work\_actions'
+[2023-05-25 14:38:04Z INFO JobServer] Successfully started websocket client.
+[2023-05-25 14:38:04Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-25 14:38:04Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-25 14:38:04Z INFO HostContext] Well known directory 'Work': 'C:\time-tracker\actions-runner\_work'
+[2023-05-25 14:38:04Z INFO HostContext] Well known directory 'Actions': 'C:\time-tracker\actions-runner\_work\_actions'
+[2023-05-25 14:38:04Z INFO ActionManager] Save archive 'https://api.github.com/repos/actions/checkout/zipball/8e5e7e5ab8b370d6c329ec480221332ada57f0ab' into C:\time-tracker\actions-runner\_work\_actions\_temp_032affef-b7fe-45f3-9d32-ee227d8b3725\4559bb03-606c-4253-81ab-ad85652ede30.zip.
+[2023-05-25 14:38:04Z INFO JobServerQueue] Try to append 1 batches web console lines for record '0a5347fd-91d3-4925-84cc-905987327be9', success rate: 1/1.
+[2023-05-25 14:38:04Z INFO JobServerQueue] Try to append 1 batches web console lines for record '0a5347fd-91d3-4925-84cc-905987327be9', success rate: 1/1.
+[2023-05-25 14:38:04Z INFO JobServerQueue] Job timeline record has been updated for the first time.
+[2023-05-25 14:38:06Z INFO ActionManager] Finished getting action repository.
+[2023-05-25 14:38:06Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-25 14:38:06Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-25 14:38:06Z INFO HostContext] Well known directory 'Work': 'C:\time-tracker\actions-runner\_work'
+[2023-05-25 14:38:06Z INFO HostContext] Well known directory 'Actions': 'C:\time-tracker\actions-runner\_work\_actions'
+[2023-05-25 14:38:06Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-25 14:38:06Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-25 14:38:06Z INFO HostContext] Well known directory 'Work': 'C:\time-tracker\actions-runner\_work'
+[2023-05-25 14:38:06Z INFO HostContext] Well known directory 'Actions': 'C:\time-tracker\actions-runner\_work\_actions'
+[2023-05-25 14:38:06Z INFO ActionManager] Save archive 'https://api.github.com/repos/actions/setup-node/zipball/64ed1c7eab4cce3362f8c340dee64e5eaeef8f7c' into C:\time-tracker\actions-runner\_work\_actions\_temp_abe9ef6d-79cb-4169-b4fc-f3d7e9087d51\7eda99a4-fb2d-4df1-82e2-291f1702c097.zip.
+[2023-05-25 14:38:06Z INFO JobServerQueue] Try to append 1 batches web console lines for record '0a5347fd-91d3-4925-84cc-905987327be9', success rate: 1/1.
+[2023-05-25 14:38:10Z INFO ActionManager] Finished getting action repository.
+[2023-05-25 14:38:10Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-25 14:38:10Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-25 14:38:10Z INFO HostContext] Well known directory 'Work': 'C:\time-tracker\actions-runner\_work'
+[2023-05-25 14:38:10Z INFO HostContext] Well known directory 'Actions': 'C:\time-tracker\actions-runner\_work\_actions'
+[2023-05-25 14:38:10Z INFO ActionManifestManager] Load schema file with definitions: [
+  "null",
+  "boolean",
+  "number",
+  "string",
+  "sequence",
+  "mapping",
+  "any",
+  "action-root",
+  "inputs",
+  "input",
+  "outputs",
+  "output-definition",
+  "runs",
+  "container-runs",
+  "container-runs-args",
+  "container-runs-env",
+  "node-runs",
+  "plugin-runs",
+  "composite-runs",
+  "composite-steps",
+  "composite-step",
+  "run-step",
+  "uses-step",
+  "container-runs-context",
+  "output-value",
+  "input-default-context",
+  "non-empty-string",
+  "string-steps-context",
+  "boolean-steps-context",
+  "step-env",
+  "step-if",
+  "step-with"
+]
+[2023-05-25 14:38:10Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-25 14:38:10Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-25 14:38:10Z INFO HostContext] Well known directory 'Work': 'C:\time-tracker\actions-runner\_work'
+[2023-05-25 14:38:10Z INFO HostContext] Well known directory 'Actions': 'C:\time-tracker\actions-runner\_work\_actions'
+[2023-05-25 14:38:11Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 58,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 62,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 71,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 74,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node16",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2023-05-25 14:38:11Z INFO ActionManager] Action node.js file: dist/index.js, no more preparation.
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Work': 'C:\time-tracker\actions-runner\_work'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Actions': 'C:\time-tracker\actions-runner\_work\_actions'
+[2023-05-25 14:38:11Z INFO ActionManager] Load action that reference repository from 'C:\time-tracker\actions-runner\_work\_actions\actions\checkout\v3'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Work': 'C:\time-tracker\actions-runner\_work'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Actions': 'C:\time-tracker\actions-runner\_work\_actions'
+[2023-05-25 14:38:11Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 58,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 62,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 71,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 74,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node16",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2023-05-25 14:38:11Z INFO ActionManager] Action pre node.js file: N/A.
+[2023-05-25 14:38:11Z INFO ActionManager] Action node.js file: dist/index.js.
+[2023-05-25 14:38:11Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Work': 'C:\time-tracker\actions-runner\_work'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Actions': 'C:\time-tracker\actions-runner\_work\_actions'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Work': 'C:\time-tracker\actions-runner\_work'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Actions': 'C:\time-tracker\actions-runner\_work\_actions'
+[2023-05-25 14:38:11Z INFO ActionManifestManager] Ignore action property author.
+[2023-05-25 14:38:11Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Setup Node.js environment",
+  "description": "Setup a Node.js environment by adding problem matchers and optionally downloading and adding it to the PATH.",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 5,
+          "col": 3,
+          "lit": "always-auth"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 7,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 8,
+          "col": 3,
+          "lit": "node-version"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 10,
+          "col": 3,
+          "lit": "node-version-file"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 12,
+          "col": 3,
+          "lit": "architecture"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 14,
+          "col": 3,
+          "lit": "check-latest"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 16,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 17,
+          "col": 3,
+          "lit": "registry-url"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 19,
+          "col": 3,
+          "lit": "scope"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 21,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 3,
+          "line": 23,
+          "col": 14,
+          "expr": "github.server_url == 'https://github.com' && github.token || ''"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 24,
+          "col": 3,
+          "lit": "cache"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 26,
+          "col": 3,
+          "lit": "cache-dependency-path"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/setup/index.js",
+    "pre": null,
+    "post": "dist/cache-save/index.js",
+    "nodeVersion": "node16",
+    "cleanupCondition": "success()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2023-05-25 14:38:11Z INFO ActionManager] Action node.js file: dist/setup/index.js, no more preparation.
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Work': 'C:\time-tracker\actions-runner\_work'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Actions': 'C:\time-tracker\actions-runner\_work\_actions'
+[2023-05-25 14:38:11Z INFO ActionManager] Load action that reference repository from 'C:\time-tracker\actions-runner\_work\_actions\actions\setup-node\v3'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Work': 'C:\time-tracker\actions-runner\_work'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Actions': 'C:\time-tracker\actions-runner\_work\_actions'
+[2023-05-25 14:38:11Z INFO ActionManifestManager] Ignore action property author.
+[2023-05-25 14:38:11Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Setup Node.js environment",
+  "description": "Setup a Node.js environment by adding problem matchers and optionally downloading and adding it to the PATH.",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 5,
+          "col": 3,
+          "lit": "always-auth"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 7,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 8,
+          "col": 3,
+          "lit": "node-version"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 10,
+          "col": 3,
+          "lit": "node-version-file"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 12,
+          "col": 3,
+          "lit": "architecture"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 14,
+          "col": 3,
+          "lit": "check-latest"
+        },
+        "value": {
+          "type": 0,
+          "file": 3,
+          "line": 16,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 17,
+          "col": 3,
+          "lit": "registry-url"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 19,
+          "col": 3,
+          "lit": "scope"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 21,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 3,
+          "line": 23,
+          "col": 14,
+          "expr": "github.server_url == 'https://github.com' && github.token || ''"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 24,
+          "col": 3,
+          "lit": "cache"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 3,
+          "line": 26,
+          "col": 3,
+          "lit": "cache-dependency-path"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/setup/index.js",
+    "pre": null,
+    "post": "dist/cache-save/index.js",
+    "nodeVersion": "node16",
+    "cleanupCondition": "success()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2023-05-25 14:38:11Z INFO ActionManager] Action pre node.js file: N/A.
+[2023-05-25 14:38:11Z INFO ActionManager] Action node.js file: dist/setup/index.js.
+[2023-05-25 14:38:11Z INFO ActionManager] Action post node.js file: dist/cache-save/index.js.
+[2023-05-25 14:38:11Z INFO JobExtension] Adding .
+[2023-05-25 14:38:11Z INFO JobExtension] Adding .
+[2023-05-25 14:38:11Z INFO JobExtension] Adding .
+[2023-05-25 14:38:11Z INFO JobExtension] Adding .
+[2023-05-25 14:38:11Z INFO JobExtension] Adding .
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Diag': 'C:\time-tracker\actions-runner\_diag'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Diag': 'C:\time-tracker\actions-runner\_diag'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Diag': 'C:\time-tracker\actions-runner\_diag'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Diag': 'C:\time-tracker\actions-runner\_diag'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Diag': 'C:\time-tracker\actions-runner\_diag'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Diag': 'C:\time-tracker\actions-runner\_diag'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Diag': 'C:\time-tracker\actions-runner\_diag'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Diag': 'C:\time-tracker\actions-runner\_diag'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Diag': 'C:\time-tracker\actions-runner\_diag'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Diag': 'C:\time-tracker\actions-runner\_diag'
+[2023-05-25 14:38:11Z INFO JobExtension] Total accessible running process: 266.
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Work': 'C:\time-tracker\actions-runner\_work'
+[2023-05-25 14:38:11Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "setup_job",
+  "type": "runner",
+  "stage": "Pre",
+  "stepId": "0a5347fd-91d3-4925-84cc-905987327be9",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 8,
+  "startTime": "2023-05-25T14:38:03.3780741Z",
+  "finishTime": "2023-05-25T14:38:11.3009868Z"
+}.
+[2023-05-25 14:38:11Z INFO JobRunner] Total job steps: 5.
+[2023-05-25 14:38:11Z INFO JobRunner] Run all job steps.
+[2023-05-25 14:38:11Z INFO StepsRunner] Processing step: DisplayName='Run actions/checkout@v3'
+[2023-05-25 14:38:11Z INFO StepsRunner] Evaluating: success()
+[2023-05-25 14:38:11Z INFO StepsRunner] Result: true
+[2023-05-25 14:38:11Z INFO StepsRunner] Starting the step.
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Work': 'C:\time-tracker\actions-runner\_work'
+[2023-05-25 14:38:11Z INFO StepsRunner] Which: 'chcp'
+[2023-05-25 14:38:11Z INFO JobServerQueue] Try to append 1 batches web console lines for record '0a5347fd-91d3-4925-84cc-905987327be9', success rate: 1/1.
+[2023-05-25 14:38:11Z INFO StepsRunner] Location: 'C:\Windows\system32\chcp.COM'
+[2023-05-25 14:38:11Z INFO ProcessInvokerWrapper] Starting process:
+[2023-05-25 14:38:11Z INFO ProcessInvokerWrapper]   File name: 'C:\Windows\system32\chcp.COM'
+[2023-05-25 14:38:11Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2023-05-25 14:38:11Z INFO ProcessInvokerWrapper]   Working directory: 'C:\time-tracker\actions-runner\_work'
+[2023-05-25 14:38:11Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-05-25 14:38:11Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-05-25 14:38:11Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-05-25 14:38:11Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-05-25 14:38:11Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2023-05-25 14:38:11Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-05-25 14:38:11Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-05-25 14:38:11Z INFO ProcessInvokerWrapper] Process started with process id 21704, waiting for process exit.
+[2023-05-25 14:38:11Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-05-25 14:38:11Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-05-25 14:38:11Z INFO ProcessInvokerWrapper] Finished process 21704 with exit code 0, and elapsed time 00:00:00.0464888.
+[2023-05-25 14:38:11Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Work': 'C:\time-tracker\actions-runner\_work'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Actions': 'C:\time-tracker\actions-runner\_work\_actions'
+[2023-05-25 14:38:11Z INFO ActionManager] Load action that reference repository from 'C:\time-tracker\actions-runner\_work\_actions\actions\checkout\v3'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Work': 'C:\time-tracker\actions-runner\_work'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Actions': 'C:\time-tracker\actions-runner\_work\_actions'
+[2023-05-25 14:38:11Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 58,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 62,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 71,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 74,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node16",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2023-05-25 14:38:11Z INFO ActionManager] Action pre node.js file: N/A.
+[2023-05-25 14:38:11Z INFO ActionManager] Action node.js file: dist/index.js.
+[2023-05-25 14:38:11Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2023-05-25 14:38:11Z INFO ExecutionContext] Reserve record order 7 to 12 for post job actions.
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Diag': 'C:\time-tracker\actions-runner\_diag'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Diag': 'C:\time-tracker\actions-runner\_diag'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Work': 'C:\time-tracker\actions-runner\_work'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Temp': 'C:\time-tracker\actions-runner\_work\_temp'
+[2023-05-25 14:38:11Z INFO ExecutionContext] Write event payload to C:\time-tracker\actions-runner\_work\_temp\_github_workflow\event.json
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Work': 'C:\time-tracker\actions-runner\_work'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Temp': 'C:\time-tracker\actions-runner\_work\_temp'
+[2023-05-25 14:38:11Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2023-05-25 14:38:11Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddPathFileCommand, Runner.Worker
+[2023-05-25 14:38:11Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetEnvFileCommand, Runner.Worker
+[2023-05-25 14:38:11Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.CreateStepSummaryCommand, Runner.Worker
+[2023-05-25 14:38:11Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SaveStateFileCommand, Runner.Worker
+[2023-05-25 14:38:11Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetOutputFileCommand, Runner.Worker
+[2023-05-25 14:38:11Z INFO ActionManifestManager] Input 'repository': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 6,
+  "col": 14,
+  "lit": "Haider531/time-tracker"
+}
+[2023-05-25 14:38:11Z INFO ActionManifestManager] Input 'ref': default value evaluate result: ""
+[2023-05-25 14:38:11Z INFO ActionManifestManager] Input 'token': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 24,
+  "col": 14,
+  "lit": "***"
+}
+[2023-05-25 14:38:11Z INFO ActionManifestManager] Input 'ssh-key': default value evaluate result: ""
+[2023-05-25 14:38:11Z INFO ActionManifestManager] Input 'ssh-known-hosts': default value evaluate result: ""
+[2023-05-25 14:38:11Z INFO ActionManifestManager] Input 'ssh-strict': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 47,
+  "col": 14,
+  "lit": "true"
+}
+[2023-05-25 14:38:11Z INFO ActionManifestManager] Input 'persist-credentials': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 50,
+  "col": 14,
+  "lit": "true"
+}
+[2023-05-25 14:38:11Z INFO ActionManifestManager] Input 'path': default value evaluate result: ""
+[2023-05-25 14:38:11Z INFO ActionManifestManager] Input 'clean': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 55,
+  "col": 14,
+  "lit": "true"
+}
+[2023-05-25 14:38:11Z INFO ActionManifestManager] Input 'fetch-depth': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 58,
+  "col": 14,
+  "lit": "1"
+}
+[2023-05-25 14:38:11Z INFO ActionManifestManager] Input 'lfs': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 61,
+  "col": 14,
+  "lit": "false"
+}
+[2023-05-25 14:38:11Z INFO ActionManifestManager] Input 'submodules': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 70,
+  "col": 14,
+  "lit": "false"
+}
+[2023-05-25 14:38:11Z INFO ActionManifestManager] Input 'set-safe-directory': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 73,
+  "col": 14,
+  "lit": "true"
+}
+[2023-05-25 14:38:11Z INFO ActionManifestManager] Input 'github-server-url': default value evaluate result: ""
+[2023-05-25 14:38:11Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2023-05-25 14:38:11Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.InternalPluginSetRepoPathCommandExtension, Runner.Worker
+[2023-05-25 14:38:11Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetEnvCommandExtension, Runner.Worker
+[2023-05-25 14:38:11Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SetOutputCommandExtension, Runner.Worker
+[2023-05-25 14:38:11Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.SaveStateCommandExtension, Runner.Worker
+[2023-05-25 14:38:11Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddPathCommandExtension, Runner.Worker
+[2023-05-25 14:38:11Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddMaskCommandExtension, Runner.Worker
+[2023-05-25 14:38:11Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.AddMatcherCommandExtension, Runner.Worker
+[2023-05-25 14:38:11Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.RemoveMatcherCommandExtension, Runner.Worker
+[2023-05-25 14:38:11Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.WarningCommandExtension, Runner.Worker
+[2023-05-25 14:38:11Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.ErrorCommandExtension, Runner.Worker
+[2023-05-25 14:38:11Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.NoticeCommandExtension, Runner.Worker
+[2023-05-25 14:38:11Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.DebugCommandExtension, Runner.Worker
+[2023-05-25 14:38:11Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.GroupCommandExtension, Runner.Worker
+[2023-05-25 14:38:11Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.EndGroupCommandExtension, Runner.Worker
+[2023-05-25 14:38:11Z INFO ExtensionManager] Creating instance: GitHub.Runner.Worker.EchoCommandExtension, Runner.Worker
+[2023-05-25 14:38:11Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2023-05-25 14:38:11Z INFO ActionCommandManager] Register action command extension for command set-env
+[2023-05-25 14:38:11Z INFO ActionCommandManager] Register action command extension for command set-output
+[2023-05-25 14:38:11Z INFO ActionCommandManager] Register action command extension for command save-state
+[2023-05-25 14:38:11Z INFO ActionCommandManager] Register action command extension for command add-path
+[2023-05-25 14:38:11Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2023-05-25 14:38:11Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2023-05-25 14:38:11Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2023-05-25 14:38:11Z INFO ActionCommandManager] Register action command extension for command warning
+[2023-05-25 14:38:11Z INFO ActionCommandManager] Register action command extension for command error
+[2023-05-25 14:38:11Z INFO ActionCommandManager] Register action command extension for command notice
+[2023-05-25 14:38:11Z INFO ActionCommandManager] Register action command extension for command debug
+[2023-05-25 14:38:11Z INFO ActionCommandManager] Register action command extension for command group
+[2023-05-25 14:38:11Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2023-05-25 14:38:11Z INFO ActionCommandManager] Register action command extension for command echo
+[2023-05-25 14:38:11Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'c28f0f2d-4c36-5b18-4fd9-c2e00abe08ba', success rate: 1/1.
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-25 14:38:11Z INFO HostContext] Well known directory 'Externals': 'C:\time-tracker\actions-runner\externals'
+[2023-05-25 14:38:11Z INFO ProcessInvokerWrapper] Starting process:
+[2023-05-25 14:38:11Z INFO ProcessInvokerWrapper]   File name: 'C:\time-tracker\actions-runner\externals\node16\bin\node.exe'
+[2023-05-25 14:38:11Z INFO ProcessInvokerWrapper]   Arguments: '"C:\time-tracker\actions-runner\_work\_actions\actions\checkout\v3\dist/index.js"'
+[2023-05-25 14:38:11Z INFO ProcessInvokerWrapper]   Working directory: 'C:\time-tracker\actions-runner\_work\time-tracker\time-tracker'
+[2023-05-25 14:38:11Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-05-25 14:38:11Z INFO ProcessInvokerWrapper]   Encoding web name: utf-8 ; code page: '65001'
+[2023-05-25 14:38:11Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-05-25 14:38:11Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-05-25 14:38:11Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2023-05-25 14:38:11Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-05-25 14:38:11Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-05-25 14:38:11Z INFO ProcessInvokerWrapper] Process started with process id 18640, waiting for process exit.
+[2023-05-25 14:38:11Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'c28f0f2d-4c36-5b18-4fd9-c2e00abe08ba', success rate: 1/1.
+[2023-05-25 14:38:12Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2023-05-25 14:38:12Z INFO AddMaskCommandExtension] Add new secret mask with length of 76
+[2023-05-25 14:38:12Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'c28f0f2d-4c36-5b18-4fd9-c2e00abe08ba', success rate: 1/1.
+[2023-05-25 14:38:13Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'c28f0f2d-4c36-5b18-4fd9-c2e00abe08ba', success rate: 1/1.
+[2023-05-25 14:38:13Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'c28f0f2d-4c36-5b18-4fd9-c2e00abe08ba', success rate: 1/1.
+[2023-05-25 14:38:13Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'c28f0f2d-4c36-5b18-4fd9-c2e00abe08ba', success rate: 1/1.
+[2023-05-25 14:38:13Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'c28f0f2d-4c36-5b18-4fd9-c2e00abe08ba', success rate: 1/1.
+[2023-05-25 14:38:14Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-05-25 14:38:14Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-05-25 14:38:14Z INFO ProcessInvokerWrapper] Finished process 18640 with exit code 1, and elapsed time 00:00:03.2075883.
+[2023-05-25 14:38:15Z INFO CreateStepSummaryCommand] Step Summary file (C:\time-tracker\actions-runner\_work\_temp\_runner_file_commands\step_summary_c8808bf2-5aa2-4e73-9073-f16e9d7f1131) is empty; skipping attachment upload
+[2023-05-25 14:38:15Z INFO StepsRunner] Step result: Failed
+[2023-05-25 14:38:15Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "actions/checkout",
+  "ref": "v3",
+  "type": "node16",
+  "stage": "Main",
+  "stepId": "c28f0f2d-4c36-5b18-4fd9-c2e00abe08ba",
+  "stepContextName": "__actions_checkout",
+  "hasPreStep": false,
+  "hasPostStep": true,
+  "result": "failed",
+  "errorMessages": [
+    "No url found for submodule path 'actions-runner/_work/time-tracker/time-tracker' in .gitmodules",
+    "The process 'C:\\Program Files\\Git\\cmd\\git.exe' failed with exit code 128"
+  ],
+  "executionTimeInSeconds": 4,
+  "startTime": "2023-05-25T14:38:11.4052205Z",
+  "finishTime": "2023-05-25T14:38:15.0140397Z"
+}.
+[2023-05-25 14:38:15Z INFO StepsRunner] Update job result with current step result 'Failed'.
+[2023-05-25 14:38:15Z INFO StepsRunner] Current state: job state = 'Failed'
+[2023-05-25 14:38:15Z INFO StepsRunner] Processing step: DisplayName='Use Node.js 16.x'
+[2023-05-25 14:38:15Z INFO StepsRunner] Evaluating: success()
+[2023-05-25 14:38:15Z INFO StepsRunner] Result: false
+[2023-05-25 14:38:15Z INFO StepsRunner] Skipping step due to condition evaluation.
+[2023-05-25 14:38:15Z INFO StepsRunner] No need for updating job result with current step result 'Skipped'.
+[2023-05-25 14:38:15Z INFO StepsRunner] Current state: job state = 'Failed'
+[2023-05-25 14:38:15Z INFO StepsRunner] Processing step: DisplayName='Run npm i'
+[2023-05-25 14:38:15Z INFO StepsRunner] Evaluating: success()
+[2023-05-25 14:38:15Z INFO StepsRunner] Result: false
+[2023-05-25 14:38:15Z INFO StepsRunner] Skipping step due to condition evaluation.
+[2023-05-25 14:38:15Z INFO StepsRunner] No need for updating job result with current step result 'Skipped'.
+[2023-05-25 14:38:15Z INFO StepsRunner] Current state: job state = 'Failed'
+[2023-05-25 14:38:15Z INFO StepsRunner] Processing step: DisplayName='Run npm run build --if-present'
+[2023-05-25 14:38:15Z INFO StepsRunner] Evaluating: success()
+[2023-05-25 14:38:15Z INFO StepsRunner] Result: false
+[2023-05-25 14:38:15Z INFO StepsRunner] Skipping step due to condition evaluation.
+[2023-05-25 14:38:15Z INFO StepsRunner] No need for updating job result with current step result 'Skipped'.
+[2023-05-25 14:38:15Z INFO StepsRunner] Current state: job state = 'Failed'
+[2023-05-25 14:38:15Z INFO StepsRunner] Processing step: DisplayName='Run npm test'
+[2023-05-25 14:38:15Z INFO StepsRunner] Evaluating: success()
+[2023-05-25 14:38:15Z INFO StepsRunner] Result: false
+[2023-05-25 14:38:15Z INFO StepsRunner] Skipping step due to condition evaluation.
+[2023-05-25 14:38:15Z INFO StepsRunner] No need for updating job result with current step result 'Skipped'.
+[2023-05-25 14:38:15Z INFO StepsRunner] Current state: job state = 'Failed'
+[2023-05-25 14:38:15Z INFO StepsRunner] Processing step: DisplayName='Post Run actions/checkout@v3'
+[2023-05-25 14:38:15Z INFO StepsRunner] Evaluating: always()
+[2023-05-25 14:38:15Z INFO StepsRunner] Result: true
+[2023-05-25 14:38:15Z INFO StepsRunner] Starting the step.
+[2023-05-25 14:38:15Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-25 14:38:15Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-25 14:38:15Z INFO HostContext] Well known directory 'Work': 'C:\time-tracker\actions-runner\_work'
+[2023-05-25 14:38:15Z INFO StepsRunner] Which: 'chcp'
+[2023-05-25 14:38:15Z INFO StepsRunner] Location: 'C:\Windows\system32\chcp.COM'
+[2023-05-25 14:38:15Z INFO ProcessInvokerWrapper] Starting process:
+[2023-05-25 14:38:15Z INFO ProcessInvokerWrapper]   File name: 'C:\Windows\system32\chcp.COM'
+[2023-05-25 14:38:15Z INFO ProcessInvokerWrapper]   Arguments: '65001'
+[2023-05-25 14:38:15Z INFO ProcessInvokerWrapper]   Working directory: 'C:\time-tracker\actions-runner\_work'
+[2023-05-25 14:38:15Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-05-25 14:38:15Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-05-25 14:38:15Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-05-25 14:38:15Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-05-25 14:38:15Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2023-05-25 14:38:15Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-05-25 14:38:15Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-05-25 14:38:15Z INFO ProcessInvokerWrapper] Process started with process id 21220, waiting for process exit.
+[2023-05-25 14:38:15Z INFO JobServerQueue] Try to append 1 batches web console lines for record 'c28f0f2d-4c36-5b18-4fd9-c2e00abe08ba', success rate: 1/1.
+[2023-05-25 14:38:15Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-05-25 14:38:15Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-05-25 14:38:15Z INFO ProcessInvokerWrapper] Finished process 21220 with exit code 0, and elapsed time 00:00:00.0258957.
+[2023-05-25 14:38:15Z INFO StepsRunner] Successfully returned to code page 65001 (UTF8)
+[2023-05-25 14:38:15Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-25 14:38:15Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-25 14:38:15Z INFO HostContext] Well known directory 'Work': 'C:\time-tracker\actions-runner\_work'
+[2023-05-25 14:38:15Z INFO HostContext] Well known directory 'Actions': 'C:\time-tracker\actions-runner\_work\_actions'
+[2023-05-25 14:38:15Z INFO ActionManager] Load action that reference repository from 'C:\time-tracker\actions-runner\_work\_actions\actions\checkout\v3'
+[2023-05-25 14:38:15Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-25 14:38:15Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-25 14:38:15Z INFO HostContext] Well known directory 'Work': 'C:\time-tracker\actions-runner\_work'
+[2023-05-25 14:38:15Z INFO HostContext] Well known directory 'Actions': 'C:\time-tracker\actions-runner\_work\_actions'
+[2023-05-25 14:38:15Z INFO ActionManifestManager] Loaded action.yml file: {
+  "name": "Checkout",
+  "description": "Checkout a Git repository at a particular version",
+  "inputs": {
+    "type": 2,
+    "map": [
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 4,
+          "col": 3,
+          "lit": "repository"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 6,
+          "col": 14,
+          "expr": "github.repository"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 7,
+          "col": 3,
+          "lit": "ref"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 12,
+          "col": 3,
+          "lit": "token"
+        },
+        "value": {
+          "type": 3,
+          "file": 2,
+          "line": 24,
+          "col": 14,
+          "expr": "github.token"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 25,
+          "col": 3,
+          "lit": "ssh-key"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 37,
+          "col": 3,
+          "lit": "ssh-known-hosts"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 42,
+          "col": 3,
+          "lit": "ssh-strict"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 47,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 48,
+          "col": 3,
+          "lit": "persist-credentials"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 50,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 51,
+          "col": 3,
+          "lit": "path"
+        },
+        "value": ""
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 53,
+          "col": 3,
+          "lit": "clean"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 55,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 56,
+          "col": 3,
+          "lit": "fetch-depth"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 58,
+          "col": 14,
+          "lit": "1"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 59,
+          "col": 3,
+          "lit": "lfs"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 61,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 62,
+          "col": 3,
+          "lit": "submodules"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 70,
+          "col": 14,
+          "lit": "false"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 71,
+          "col": 3,
+          "lit": "set-safe-directory"
+        },
+        "value": {
+          "type": 0,
+          "file": 2,
+          "line": 73,
+          "col": 14,
+          "lit": "true"
+        }
+      },
+      {
+        "key": {
+          "type": 0,
+          "file": 2,
+          "line": 74,
+          "col": 3,
+          "lit": "github-server-url"
+        },
+        "value": ""
+      }
+    ]
+  },
+  "execution": {
+    "executionType": "nodeJS",
+    "hasPre": false,
+    "hasPost": true,
+    "script": "dist/index.js",
+    "pre": null,
+    "post": "dist/index.js",
+    "nodeVersion": "node16",
+    "cleanupCondition": "always()",
+    "initCondition": "always()"
+  },
+  "deprecated": null
+}
+[2023-05-25 14:38:15Z INFO ActionManager] Action pre node.js file: N/A.
+[2023-05-25 14:38:15Z INFO ActionManager] Action node.js file: dist/index.js.
+[2023-05-25 14:38:15Z INFO ActionManager] Action post node.js file: dist/index.js.
+[2023-05-25 14:38:15Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-25 14:38:15Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-25 14:38:15Z INFO HostContext] Well known directory 'Work': 'C:\time-tracker\actions-runner\_work'
+[2023-05-25 14:38:15Z INFO HostContext] Well known directory 'Temp': 'C:\time-tracker\actions-runner\_work\_temp'
+[2023-05-25 14:38:15Z INFO ExecutionContext] Write event payload to C:\time-tracker\actions-runner\_work\_temp\_github_workflow\event.json
+[2023-05-25 14:38:15Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-25 14:38:15Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-25 14:38:15Z INFO HostContext] Well known directory 'Work': 'C:\time-tracker\actions-runner\_work'
+[2023-05-25 14:38:15Z INFO HostContext] Well known directory 'Temp': 'C:\time-tracker\actions-runner\_work\_temp'
+[2023-05-25 14:38:15Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IFileCommandExtension'
+[2023-05-25 14:38:15Z INFO ActionManifestManager] Input 'repository': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 6,
+  "col": 14,
+  "lit": "Haider531/time-tracker"
+}
+[2023-05-25 14:38:15Z INFO ActionManifestManager] Input 'ref': default value evaluate result: ""
+[2023-05-25 14:38:15Z INFO ActionManifestManager] Input 'token': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 24,
+  "col": 14,
+  "lit": "***"
+}
+[2023-05-25 14:38:15Z INFO ActionManifestManager] Input 'ssh-key': default value evaluate result: ""
+[2023-05-25 14:38:15Z INFO ActionManifestManager] Input 'ssh-known-hosts': default value evaluate result: ""
+[2023-05-25 14:38:15Z INFO ActionManifestManager] Input 'ssh-strict': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 47,
+  "col": 14,
+  "lit": "true"
+}
+[2023-05-25 14:38:15Z INFO ActionManifestManager] Input 'persist-credentials': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 50,
+  "col": 14,
+  "lit": "true"
+}
+[2023-05-25 14:38:15Z INFO ActionManifestManager] Input 'path': default value evaluate result: ""
+[2023-05-25 14:38:15Z INFO ActionManifestManager] Input 'clean': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 55,
+  "col": 14,
+  "lit": "true"
+}
+[2023-05-25 14:38:15Z INFO ActionManifestManager] Input 'fetch-depth': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 58,
+  "col": 14,
+  "lit": "1"
+}
+[2023-05-25 14:38:15Z INFO ActionManifestManager] Input 'lfs': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 61,
+  "col": 14,
+  "lit": "false"
+}
+[2023-05-25 14:38:15Z INFO ActionManifestManager] Input 'submodules': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 70,
+  "col": 14,
+  "lit": "false"
+}
+[2023-05-25 14:38:15Z INFO ActionManifestManager] Input 'set-safe-directory': default value evaluate result: {
+  "type": 0,
+  "file": 2,
+  "line": 73,
+  "col": 14,
+  "lit": "true"
+}
+[2023-05-25 14:38:15Z INFO ActionManifestManager] Input 'github-server-url': default value evaluate result: ""
+[2023-05-25 14:38:15Z INFO ExtensionManager] Getting extensions for interface: 'GitHub.Runner.Worker.IActionCommandExtension'
+[2023-05-25 14:38:15Z INFO ActionCommandManager] Register action command extension for command internal-set-repo-path
+[2023-05-25 14:38:15Z INFO ActionCommandManager] Register action command extension for command set-env
+[2023-05-25 14:38:15Z INFO ActionCommandManager] Register action command extension for command set-output
+[2023-05-25 14:38:15Z INFO ActionCommandManager] Register action command extension for command save-state
+[2023-05-25 14:38:15Z INFO ActionCommandManager] Register action command extension for command add-path
+[2023-05-25 14:38:15Z INFO ActionCommandManager] Register action command extension for command add-mask
+[2023-05-25 14:38:15Z INFO ActionCommandManager] Register action command extension for command add-matcher
+[2023-05-25 14:38:15Z INFO ActionCommandManager] Register action command extension for command remove-matcher
+[2023-05-25 14:38:15Z INFO ActionCommandManager] Register action command extension for command warning
+[2023-05-25 14:38:15Z INFO ActionCommandManager] Register action command extension for command error
+[2023-05-25 14:38:15Z INFO ActionCommandManager] Register action command extension for command notice
+[2023-05-25 14:38:15Z INFO ActionCommandManager] Register action command extension for command debug
+[2023-05-25 14:38:15Z INFO ActionCommandManager] Register action command extension for command group
+[2023-05-25 14:38:15Z INFO ActionCommandManager] Register action command extension for command endgroup
+[2023-05-25 14:38:15Z INFO ActionCommandManager] Register action command extension for command echo
+[2023-05-25 14:38:15Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-25 14:38:15Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-25 14:38:15Z INFO HostContext] Well known directory 'Externals': 'C:\time-tracker\actions-runner\externals'
+[2023-05-25 14:38:15Z INFO ProcessInvokerWrapper] Starting process:
+[2023-05-25 14:38:15Z INFO ProcessInvokerWrapper]   File name: 'C:\time-tracker\actions-runner\externals\node16\bin\node.exe'
+[2023-05-25 14:38:15Z INFO ProcessInvokerWrapper]   Arguments: '"C:\time-tracker\actions-runner\_work\_actions\actions\checkout\v3\dist/index.js"'
+[2023-05-25 14:38:15Z INFO ProcessInvokerWrapper]   Working directory: 'C:\time-tracker\actions-runner\_work\time-tracker\time-tracker'
+[2023-05-25 14:38:15Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-05-25 14:38:15Z INFO ProcessInvokerWrapper]   Encoding web name: utf-8 ; code page: '65001'
+[2023-05-25 14:38:15Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2023-05-25 14:38:15Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-05-25 14:38:15Z INFO ProcessInvokerWrapper]   Persist current code page: 'True'
+[2023-05-25 14:38:15Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-05-25 14:38:15Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2023-05-25 14:38:15Z INFO ProcessInvokerWrapper] Process started with process id 19072, waiting for process exit.
+[2023-05-25 14:38:15Z INFO JobServerQueue] Try to append 1 batches web console lines for record '474ed3d1-92c7-4907-8d4f-1d5f9bedfe06', success rate: 1/1.
+[2023-05-25 14:38:15Z INFO AddMaskCommandExtension] Add new secret mask with length of 32
+[2023-05-25 14:38:15Z INFO JobServerQueue] Try to append 1 batches web console lines for record '474ed3d1-92c7-4907-8d4f-1d5f9bedfe06', success rate: 1/1.
+[2023-05-25 14:38:15Z INFO JobServerQueue] Try to upload 1 log files or attachments, success rate: 1/1.
+[2023-05-25 14:38:15Z INFO JobServerQueue] Try to append 1 batches web console lines for record '474ed3d1-92c7-4907-8d4f-1d5f9bedfe06', success rate: 1/1.
+[2023-05-25 14:38:17Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-05-25 14:38:17Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-05-25 14:38:17Z INFO ProcessInvokerWrapper] Finished process 19072 with exit code 0, and elapsed time 00:00:01.9234616.
+[2023-05-25 14:38:17Z INFO CreateStepSummaryCommand] Step Summary file (C:\time-tracker\actions-runner\_work\_temp\_runner_file_commands\step_summary_a3eb7334-edc7-45e2-8849-bc04b0b7ac01) is empty; skipping attachment upload
+[2023-05-25 14:38:17Z INFO StepsRunner] Step result: 
+[2023-05-25 14:38:17Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "actions/checkout",
+  "ref": "v3",
+  "type": "node16",
+  "stage": "Post",
+  "stepId": "474ed3d1-92c7-4907-8d4f-1d5f9bedfe06",
+  "result": "succeeded",
+  "errorMessages": [
+    "The process 'C:\\Program Files\\Git\\cmd\\git.exe' failed with exit code 128"
+  ],
+  "executionTimeInSeconds": 3,
+  "startTime": "2023-05-25T14:38:15.0217825Z",
+  "finishTime": "2023-05-25T14:38:17.0343348Z"
+}.
+[2023-05-25 14:38:17Z INFO StepsRunner] No need for updating job result with current step result 'Succeeded'.
+[2023-05-25 14:38:17Z INFO StepsRunner] Current state: job state = 'Failed'
+[2023-05-25 14:38:17Z INFO JobRunner] Finalize job.
+[2023-05-25 14:38:17Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-25 14:38:17Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-25 14:38:17Z INFO HostContext] Well known directory 'Diag': 'C:\time-tracker\actions-runner\_diag'
+[2023-05-25 14:38:17Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-25 14:38:17Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-25 14:38:17Z INFO HostContext] Well known directory 'Diag': 'C:\time-tracker\actions-runner\_diag'
+[2023-05-25 14:38:17Z INFO JobExtension] Initialize Env context
+[2023-05-25 14:38:17Z INFO JobExtension] Initialize steps context
+[2023-05-25 14:38:17Z INFO JobExtension] Total accessible running process: 265.
+[2023-05-25 14:38:17Z INFO ExecutionContext] Publish step telemetry for current step {
+  "action": "complete_job",
+  "type": "runner",
+  "stage": "Post",
+  "stepId": "9d92e7c4-30cf-468e-ba2a-28849b695211",
+  "result": "succeeded",
+  "errorMessages": [],
+  "executionTimeInSeconds": 1,
+  "startTime": "2023-05-25T14:38:17.0747012Z",
+  "finishTime": "2023-05-25T14:38:17.1050473Z"
+}.
+[2023-05-25 14:38:17Z INFO JobRunner] Job result after all job steps finish: Failed
+[2023-05-25 14:38:17Z INFO JobRunner] Completing the job execution context.
+[2023-05-25 14:38:17Z INFO JobRunner] Shutting down the job server queue.
+[2023-05-25 14:38:17Z INFO JobServerQueue] Fire signal to shutdown all queues.
+[2023-05-25 14:38:17Z INFO JobServerQueue] All queue process task stopped.
+[2023-05-25 14:38:17Z INFO JobServerQueue] Try to append 1 batches web console lines for record '474ed3d1-92c7-4907-8d4f-1d5f9bedfe06', success rate: 1/1.
+[2023-05-25 14:38:17Z INFO JobServerQueue] Try to append 1 batches web console lines for record '9d92e7c4-30cf-468e-ba2a-28849b695211', success rate: 1/1.
+[2023-05-25 14:38:17Z INFO JobServerQueue] Web console line queue drained.
+[2023-05-25 14:38:17Z INFO JobServerQueue] Uploading 3 files in one shot.
+[2023-05-25 14:38:19Z INFO JobServerQueue] Try to upload 3 log files or attachments, success rate: 3/3.
+[2023-05-25 14:38:19Z INFO JobServerQueue] File upload queue drained.
+[2023-05-25 14:38:19Z INFO JobServerQueue] Starting results-based upload queue...
+[2023-05-25 14:38:19Z INFO JobServerQueue] Results upload queue drained.
+[2023-05-25 14:38:20Z INFO JobServerQueue] Timeline update queue drained.
+[2023-05-25 14:38:20Z INFO JobServerQueue] Disposing job server ...
+[2023-05-25 14:38:20Z INFO JobServerQueue] Disposing results server ...
+[2023-05-25 14:38:20Z INFO JobServerQueue] All queue process tasks have been stopped, and all queues are drained.
+[2023-05-25 14:38:20Z INFO TempDirectoryManager] Cleaning runner temp folder: C:\time-tracker\actions-runner\_work\_temp
+[2023-05-25 14:38:20Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-25 14:38:20Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-25 14:38:20Z INFO HostContext] Well known directory 'Diag': 'C:\time-tracker\actions-runner\_diag'
+[2023-05-25 14:38:20Z INFO HostContext] Well known config file 'Telemetry': 'C:\time-tracker\actions-runner\_diag\.telemetry'
+[2023-05-25 14:38:20Z INFO JobRunner] Raising job completed event
+[2023-05-25 14:38:20Z INFO Worker] Job completed.
