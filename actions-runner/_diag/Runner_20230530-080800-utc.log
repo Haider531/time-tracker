@@ -1,0 +1,188 @@
+[2023-05-30 08:08:00Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2023-05-30 08:08:00Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-30 08:08:00Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-30 08:08:00Z INFO HostContext] Well known config file 'Credentials': 'C:\time-tracker\actions-runner\.credentials'
+[2023-05-30 08:08:00Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-30 08:08:00Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-30 08:08:00Z INFO HostContext] Well known config file 'Runner': 'C:\time-tracker\actions-runner\.runner'
+[2023-05-30 08:08:00Z INFO Listener] Runner is built for Windows (X64) - win-x64.
+[2023-05-30 08:08:00Z INFO Listener] RuntimeInformation: Microsoft Windows 10.0.19045.
+[2023-05-30 08:08:00Z INFO Listener] Version: 2.304.0
+[2023-05-30 08:08:00Z INFO Listener] Commit: 9ef4121b5b31ee5c03b7770288213d741081f747
+[2023-05-30 08:08:00Z INFO Listener] Culture: en-US
+[2023-05-30 08:08:00Z INFO Listener] UI Culture: en-US
+[2023-05-30 08:08:00Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-30 08:08:00Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-30 08:08:00Z INFO Listener] Validating directory permissions for: 'C:\time-tracker\actions-runner'
+[2023-05-30 08:08:00Z INFO CommandLineParser] Parse
+[2023-05-30 08:08:00Z INFO CommandLineParser] Parsing 1 args
+[2023-05-30 08:08:00Z INFO CommandLineParser] parsing argument
+[2023-05-30 08:08:00Z INFO CommandLineParser] HasArgs: False
+[2023-05-30 08:08:00Z INFO CommandLineParser] Adding Command: run
+[2023-05-30 08:08:00Z INFO Listener] Arguments parsed
+[2023-05-30 08:08:00Z INFO Runner] ExecuteCommand
+[2023-05-30 08:08:00Z INFO ConfigurationStore] currentAssemblyLocation: C:\time-tracker\actions-runner\bin\Runner.Listener.dll
+[2023-05-30 08:08:00Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-30 08:08:00Z INFO ConfigurationStore] binPath: C:\time-tracker\actions-runner\bin
+[2023-05-30 08:08:00Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-30 08:08:00Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-30 08:08:00Z INFO ConfigurationStore] RootFolder: C:\time-tracker\actions-runner
+[2023-05-30 08:08:00Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-30 08:08:00Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-30 08:08:00Z INFO HostContext] Well known config file 'Runner': 'C:\time-tracker\actions-runner\.runner'
+[2023-05-30 08:08:00Z INFO ConfigurationStore] ConfigFilePath: C:\time-tracker\actions-runner\.runner
+[2023-05-30 08:08:00Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-30 08:08:00Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-30 08:08:00Z INFO HostContext] Well known config file 'Credentials': 'C:\time-tracker\actions-runner\.credentials'
+[2023-05-30 08:08:00Z INFO ConfigurationStore] CredFilePath: C:\time-tracker\actions-runner\.credentials
+[2023-05-30 08:08:00Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-30 08:08:00Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-30 08:08:00Z INFO HostContext] Well known config file 'MigratedCredentials': 'C:\time-tracker\actions-runner\.credentials_migrated'
+[2023-05-30 08:08:00Z INFO ConfigurationStore] MigratedCredFilePath: C:\time-tracker\actions-runner\.credentials_migrated
+[2023-05-30 08:08:00Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-30 08:08:00Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-30 08:08:00Z INFO HostContext] Well known config file 'Service': 'C:\time-tracker\actions-runner\.service'
+[2023-05-30 08:08:00Z INFO ConfigurationStore] ServiceConfigFilePath: C:\time-tracker\actions-runner\.service
+[2023-05-30 08:08:00Z INFO CommandSettings] Flag 'help': 'False'
+[2023-05-30 08:08:00Z INFO CommandSettings] Flag 'version': 'False'
+[2023-05-30 08:08:00Z INFO CommandSettings] Flag 'commit': 'False'
+[2023-05-30 08:08:00Z INFO CommandSettings] Flag 'check': 'False'
+[2023-05-30 08:08:00Z INFO CommandSettings] Command 'configure': 'False'
+[2023-05-30 08:08:00Z INFO CommandSettings] Command 'remove': 'False'
+[2023-05-30 08:08:00Z INFO CommandSettings] Command 'warmup': 'False'
+[2023-05-30 08:08:00Z INFO ConfigurationManager] LoadSettings
+[2023-05-30 08:08:00Z INFO ConfigurationStore] IsConfigured()
+[2023-05-30 08:08:00Z INFO ConfigurationStore] IsConfigured: True
+[2023-05-30 08:08:00Z INFO ConfigurationManager] Is configured: True
+[2023-05-30 08:08:00Z INFO ConfigurationStore] Read setting file: 302 chars
+[2023-05-30 08:08:00Z INFO ConfigurationManager] Settings Loaded
+[2023-05-30 08:08:00Z INFO ConfigurationStore] IsServiceConfigured()
+[2023-05-30 08:08:00Z INFO ConfigurationStore] IsServiceConfigured: False
+[2023-05-30 08:08:00Z INFO CommandSettings] Command 'run': 'True'
+[2023-05-30 08:08:00Z INFO ConfigurationStore] IsConfigured()
+[2023-05-30 08:08:00Z INFO ConfigurationStore] IsConfigured: True
+[2023-05-30 08:08:00Z INFO ConfigurationManager] Is configured: True
+[2023-05-30 08:08:00Z INFO Runner] Could not parse the argument value '' for StartupType. Defaulting to Manual
+[2023-05-30 08:08:00Z INFO Runner] Set runner startup type - Manual
+[2023-05-30 08:08:00Z INFO CommandSettings] Flag 'once': 'False'
+[2023-05-30 08:08:00Z INFO CommandSettings] Flag 'once': 'False'
+[2023-05-30 08:08:00Z INFO Runner] RunAsync
+[2023-05-30 08:08:00Z INFO ConfigurationManager] LoadSettings
+[2023-05-30 08:08:00Z INFO ConfigurationStore] IsConfigured()
+[2023-05-30 08:08:00Z INFO ConfigurationStore] IsConfigured: True
+[2023-05-30 08:08:00Z INFO ConfigurationManager] Is configured: True
+[2023-05-30 08:08:00Z INFO ConfigurationManager] Settings Loaded
+[2023-05-30 08:08:00Z INFO MessageListener] {
+  "AgentId": 2,
+  "AgentName": "DESKTOP-FCS2CAO",
+  "PoolId": 1,
+  "PoolName": "Default",
+  "ServerUrl": "https://pipelines.actions.githubusercontent.com/4yCUMMnwjiVUyfp6wptLWCOLAo1f3merRRaLvjn4BIbzzClXZG",
+  "GitHubUrl": "https://github.com/Haider531/time-tracker",
+  "WorkFolder": "_work"
+}
+[2023-05-30 08:08:00Z INFO MessageListener] Loading Credentials
+[2023-05-30 08:08:00Z INFO ConfigurationStore] HasCredentials()
+[2023-05-30 08:08:00Z INFO ConfigurationStore] stored True
+[2023-05-30 08:08:00Z INFO CredentialManager] GetCredentialProvider
+[2023-05-30 08:08:00Z INFO CredentialManager] Creating type OAuth
+[2023-05-30 08:08:00Z INFO CredentialManager] Creating credential type: OAuth
+[2023-05-30 08:08:00Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-30 08:08:00Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-30 08:08:00Z INFO HostContext] Well known config file 'RSACredentials': 'C:\time-tracker\actions-runner\.credentials_rsaparams'
+[2023-05-30 08:08:00Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\time-tracker\actions-runner\.credentials_rsaparams
+[2023-05-30 08:08:00Z INFO MessageListener] Attempt to create session.
+[2023-05-30 08:08:00Z INFO MessageListener] Connecting to the Runner Server...
+[2023-05-30 08:08:00Z INFO RunnerServer] EstablishVssConnection
+[2023-05-30 08:08:00Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2023-05-30 08:08:01Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2023-05-30 08:08:01Z INFO RunnerServer] EstablishVssConnection
+[2023-05-30 08:08:01Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2023-05-30 08:08:01Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2023-05-30 08:08:01Z INFO RunnerServer] EstablishVssConnection
+[2023-05-30 08:08:01Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2023-05-30 08:08:01Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2023-05-30 08:08:02Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2023-05-30 08:08:02Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2023-05-30 08:08:02Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2023-05-30 08:08:03Z INFO MessageListener] VssConnection created
+[2023-05-30 08:08:03Z INFO Terminal] WRITE LINE: 
+[2023-05-30 08:08:03Z INFO Terminal] WRITE LINE: 
+[2023-05-30 08:08:03Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\time-tracker\actions-runner\.credentials_rsaparams
+[2023-05-30 08:08:03Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\time-tracker\actions-runner\.credentials_rsaparams
+[2023-05-30 08:08:05Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2023-05-30 08:08:05Z INFO MessageListener] Session created.
+[2023-05-30 08:08:05Z INFO Terminal] WRITE LINE: Current runner version: '2.304.0'
+[2023-05-30 08:08:05Z INFO Terminal] WRITE LINE: 2023-05-30 08:08:05Z: Listening for Jobs
+[2023-05-30 08:08:05Z INFO JobDispatcher] Set runner/worker IPC timeout to 30 seconds.
+[2023-05-30 08:08:08Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\time-tracker\actions-runner\.credentials_rsaparams
+[2023-05-30 08:08:08Z INFO MessageListener] Message '15' received from session '4b12c0da-797f-48b5-8b8a-957a6d66b4dd'.
+[2023-05-30 08:08:08Z INFO Runner] Received job message of length 21798 from service, with hash '80463a913e92e67ce41a78f1c7a6c6ed7d67d2c4700e59a660c51d2615c854eb'
+[2023-05-30 08:08:08Z INFO JobDispatcher] Job request 15 for plan 19c5b0a1-0596-47cc-9007-c8246227a551 job c269f388-e93f-55df-e42c-8ad0a472b48b received.
+[2023-05-30 08:08:08Z INFO JobDispatcher] Pull OrchestrationId 19c5b0a1-0596-47cc-9007-c8246227a551.build._16_x from JWT claims
+[2023-05-30 08:08:08Z INFO Terminal] WRITE LINE: 2023-05-30 08:08:08Z: Running job: build (16.x)
+[2023-05-30 08:08:08Z INFO JobDispatcher] Start renew job request 15 for job c269f388-e93f-55df-e42c-8ad0a472b48b.
+[2023-05-30 08:08:09Z INFO JobDispatcher] Successfully renew job request 15, job is valid till 5/30/2023 8:18:08 AM
+[2023-05-30 08:08:09Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-30 08:08:09Z INFO ProcessInvokerWrapper] Starting process:
+[2023-05-30 08:08:09Z INFO ProcessInvokerWrapper]   File name: 'C:\time-tracker\actions-runner\bin\Runner.Worker.exe'
+[2023-05-30 08:08:09Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 2176 2192'
+[2023-05-30 08:08:09Z INFO ProcessInvokerWrapper]   Working directory: 'C:\time-tracker\actions-runner\bin'
+[2023-05-30 08:08:09Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-05-30 08:08:09Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-05-30 08:08:09Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2023-05-30 08:08:09Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-05-30 08:08:09Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-05-30 08:08:09Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-05-30 08:08:09Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2023-05-30 08:08:09Z INFO ProcessInvokerWrapper] Process started with process id 11820, waiting for process exit.
+[2023-05-30 08:08:09Z INFO JobDispatcher] Send job request message to worker for job c269f388-e93f-55df-e42c-8ad0a472b48b.
+[2023-05-30 08:08:09Z INFO ProcessChannel] Sending message of length 21798, with hash '80463a913e92e67ce41a78f1c7a6c6ed7d67d2c4700e59a660c51d2615c854eb'
+[2023-05-30 08:08:09Z INFO JobNotification] Entering JobStarted Notification
+[2023-05-30 08:08:09Z INFO JobNotification] Entering StartMonitor
+[2023-05-30 08:08:28Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-05-30 08:08:28Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-05-30 08:08:28Z INFO ProcessInvokerWrapper] Finished process 11820 with exit code 102, and elapsed time 00:00:19.5608000.
+[2023-05-30 08:08:28Z INFO JobDispatcher] Worker finished for job c269f388-e93f-55df-e42c-8ad0a472b48b. Code: 102
+[2023-05-30 08:08:28Z INFO JobDispatcher] finish job request for job c269f388-e93f-55df-e42c-8ad0a472b48b with result: Failed
+[2023-05-30 08:08:28Z INFO Terminal] WRITE LINE: 2023-05-30 08:08:28Z: Job build (16.x) completed with result: Failed
+[2023-05-30 08:08:28Z INFO JobDispatcher] Stop renew job request for job c269f388-e93f-55df-e42c-8ad0a472b48b.
+[2023-05-30 08:08:28Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 15.
+[2023-05-30 08:08:28Z INFO JobNotification] Entering JobCompleted Notification
+[2023-05-30 08:08:28Z INFO JobNotification] Entering EndMonitor
+[2023-05-30 08:11:29Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\time-tracker\actions-runner\.credentials_rsaparams
+[2023-05-30 08:11:29Z INFO MessageListener] Message '16' received from session '4b12c0da-797f-48b5-8b8a-957a6d66b4dd'.
+[2023-05-30 08:11:29Z INFO Runner] Received job message of length 21802 from service, with hash '92fd35d64033cd05cd39d31b4382d41613b130741a4d2965817d28fa367f92eb'
+[2023-05-30 08:11:29Z INFO JobDispatcher] Job request 16 for plan 1558e017-a916-4646-8ec6-259738d3a2b2 job c269f388-e93f-55df-e42c-8ad0a472b48b received.
+[2023-05-30 08:11:29Z INFO JobDispatcher] Pull OrchestrationId 1558e017-a916-4646-8ec6-259738d3a2b2.build._16_x from JWT claims
+[2023-05-30 08:11:29Z INFO JobDispatcher] Job request c269f388-e93f-55df-e42c-8ad0a472b48b processed succeed.
+[2023-05-30 08:11:29Z INFO Terminal] WRITE LINE: 2023-05-30 08:11:29Z: Running job: build (16.x)
+[2023-05-30 08:11:29Z INFO JobDispatcher] Start renew job request 16 for job c269f388-e93f-55df-e42c-8ad0a472b48b.
+[2023-05-30 08:11:30Z INFO JobDispatcher] Successfully renew job request 16, job is valid till 5/30/2023 8:21:30 AM
+[2023-05-30 08:11:30Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-30 08:11:30Z INFO ProcessInvokerWrapper] Starting process:
+[2023-05-30 08:11:30Z INFO ProcessInvokerWrapper]   File name: 'C:\time-tracker\actions-runner\bin\Runner.Worker.exe'
+[2023-05-30 08:11:30Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 1468 2208'
+[2023-05-30 08:11:30Z INFO ProcessInvokerWrapper]   Working directory: 'C:\time-tracker\actions-runner\bin'
+[2023-05-30 08:11:30Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-05-30 08:11:30Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-05-30 08:11:30Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2023-05-30 08:11:30Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-05-30 08:11:30Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-05-30 08:11:30Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-05-30 08:11:30Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2023-05-30 08:11:30Z INFO ProcessInvokerWrapper] Process started with process id 19476, waiting for process exit.
+[2023-05-30 08:11:30Z INFO JobDispatcher] Send job request message to worker for job c269f388-e93f-55df-e42c-8ad0a472b48b.
+[2023-05-30 08:11:30Z INFO ProcessChannel] Sending message of length 21802, with hash '92fd35d64033cd05cd39d31b4382d41613b130741a4d2965817d28fa367f92eb'
+[2023-05-30 08:11:31Z INFO JobNotification] Entering JobStarted Notification
+[2023-05-30 08:11:31Z INFO JobNotification] Entering StartMonitor
+[2023-05-30 08:11:50Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-05-30 08:11:50Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-05-30 08:11:50Z INFO ProcessInvokerWrapper] Finished process 19476 with exit code 102, and elapsed time 00:00:19.6667013.
+[2023-05-30 08:11:50Z INFO JobDispatcher] Worker finished for job c269f388-e93f-55df-e42c-8ad0a472b48b. Code: 102
+[2023-05-30 08:11:50Z INFO JobDispatcher] finish job request for job c269f388-e93f-55df-e42c-8ad0a472b48b with result: Failed
+[2023-05-30 08:11:50Z INFO Terminal] WRITE LINE: 2023-05-30 08:11:50Z: Job build (16.x) completed with result: Failed
+[2023-05-30 08:11:50Z INFO JobDispatcher] Stop renew job request for job c269f388-e93f-55df-e42c-8ad0a472b48b.
+[2023-05-30 08:11:50Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 16.
+[2023-05-30 08:11:50Z INFO JobNotification] Entering JobCompleted Notification
+[2023-05-30 08:11:50Z INFO JobNotification] Entering EndMonitor
