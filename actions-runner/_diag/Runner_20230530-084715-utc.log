@@ -217,3 +217,39 @@
 [2023-05-30 10:09:10Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\time-tracker\actions-runner\.credentials_rsaparams
 [2023-05-30 10:09:11Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
 [2023-05-30 10:10:02Z INFO Terminal] WRITE LINE: 2023-05-30 10:10:02Z: Runner reconnected.
+[2023-05-30 10:19:19Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\time-tracker\actions-runner\.credentials_rsaparams
+[2023-05-30 10:19:19Z INFO MessageListener] Message '20' received from session '1146330d-a65f-4fe2-a73d-e9df7b94d1da'.
+[2023-05-30 10:19:19Z INFO Runner] Received job message of length 21768 from service, with hash '98bcddfe39d6f504e8d5f4a90a201eee4a157c03e8679aa03c471576bb52e0e8'
+[2023-05-30 10:19:19Z INFO JobDispatcher] Job request 20 for plan 8bd882e6-745c-49ef-93dd-0e43cc272c53 job c269f388-e93f-55df-e42c-8ad0a472b48b received.
+[2023-05-30 10:19:19Z INFO JobDispatcher] Pull OrchestrationId 8bd882e6-745c-49ef-93dd-0e43cc272c53.build._16_x from JWT claims
+[2023-05-30 10:19:19Z INFO JobDispatcher] Job request c269f388-e93f-55df-e42c-8ad0a472b48b processed succeed.
+[2023-05-30 10:19:19Z INFO Terminal] WRITE LINE: 2023-05-30 10:19:19Z: Running job: build (16.x)
+[2023-05-30 10:19:19Z INFO JobDispatcher] Start renew job request 20 for job c269f388-e93f-55df-e42c-8ad0a472b48b.
+[2023-05-30 10:19:21Z INFO JobDispatcher] Successfully renew job request 20, job is valid till 5/30/2023 10:29:20 AM
+[2023-05-30 10:19:21Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-30 10:19:21Z INFO ProcessInvokerWrapper] Starting process:
+[2023-05-30 10:19:21Z INFO ProcessInvokerWrapper]   File name: 'C:\time-tracker\actions-runner\bin\Runner.Worker.exe'
+[2023-05-30 10:19:21Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 1396 1688'
+[2023-05-30 10:19:21Z INFO ProcessInvokerWrapper]   Working directory: 'C:\time-tracker\actions-runner\bin'
+[2023-05-30 10:19:21Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-05-30 10:19:21Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-05-30 10:19:21Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2023-05-30 10:19:21Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-05-30 10:19:21Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-05-30 10:19:21Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-05-30 10:19:21Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2023-05-30 10:19:21Z INFO ProcessInvokerWrapper] Process started with process id 7460, waiting for process exit.
+[2023-05-30 10:19:21Z INFO JobDispatcher] Send job request message to worker for job c269f388-e93f-55df-e42c-8ad0a472b48b.
+[2023-05-30 10:19:21Z INFO ProcessChannel] Sending message of length 21768, with hash '98bcddfe39d6f504e8d5f4a90a201eee4a157c03e8679aa03c471576bb52e0e8'
+[2023-05-30 10:19:21Z INFO JobNotification] Entering JobStarted Notification
+[2023-05-30 10:19:21Z INFO JobNotification] Entering StartMonitor
+[2023-05-30 10:19:36Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-05-30 10:19:36Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-05-30 10:19:36Z INFO ProcessInvokerWrapper] Finished process 7460 with exit code 102, and elapsed time 00:00:15.7782462.
+[2023-05-30 10:19:36Z INFO JobDispatcher] Worker finished for job c269f388-e93f-55df-e42c-8ad0a472b48b. Code: 102
+[2023-05-30 10:19:36Z INFO JobDispatcher] finish job request for job c269f388-e93f-55df-e42c-8ad0a472b48b with result: Failed
+[2023-05-30 10:19:36Z INFO Terminal] WRITE LINE: 2023-05-30 10:19:36Z: Job build (16.x) completed with result: Failed
+[2023-05-30 10:19:36Z INFO JobDispatcher] Stop renew job request for job c269f388-e93f-55df-e42c-8ad0a472b48b.
+[2023-05-30 10:19:36Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 20.
+[2023-05-30 10:19:36Z INFO JobNotification] Entering JobCompleted Notification
+[2023-05-30 10:19:36Z INFO JobNotification] Entering EndMonitor
