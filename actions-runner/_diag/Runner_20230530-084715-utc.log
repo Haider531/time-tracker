@@ -1,0 +1,219 @@
+[2023-05-30 08:47:15Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2023-05-30 08:47:15Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-30 08:47:15Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-30 08:47:15Z INFO HostContext] Well known config file 'Credentials': 'C:\time-tracker\actions-runner\.credentials'
+[2023-05-30 08:47:16Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-30 08:47:16Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-30 08:47:16Z INFO HostContext] Well known config file 'Runner': 'C:\time-tracker\actions-runner\.runner'
+[2023-05-30 08:47:16Z INFO Listener] Runner is built for Windows (X64) - win-x64.
+[2023-05-30 08:47:16Z INFO Listener] RuntimeInformation: Microsoft Windows 10.0.19045.
+[2023-05-30 08:47:16Z INFO Listener] Version: 2.304.0
+[2023-05-30 08:47:16Z INFO Listener] Commit: 9ef4121b5b31ee5c03b7770288213d741081f747
+[2023-05-30 08:47:16Z INFO Listener] Culture: en-US
+[2023-05-30 08:47:16Z INFO Listener] UI Culture: en-US
+[2023-05-30 08:47:16Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-30 08:47:16Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-30 08:47:16Z INFO Listener] Validating directory permissions for: 'C:\time-tracker\actions-runner'
+[2023-05-30 08:47:16Z INFO CommandLineParser] Parse
+[2023-05-30 08:47:16Z INFO CommandLineParser] Parsing 1 args
+[2023-05-30 08:47:16Z INFO CommandLineParser] parsing argument
+[2023-05-30 08:47:16Z INFO CommandLineParser] HasArgs: False
+[2023-05-30 08:47:16Z INFO CommandLineParser] Adding Command: run
+[2023-05-30 08:47:16Z INFO Listener] Arguments parsed
+[2023-05-30 08:47:16Z INFO Runner] ExecuteCommand
+[2023-05-30 08:47:16Z INFO ConfigurationStore] currentAssemblyLocation: C:\time-tracker\actions-runner\bin\Runner.Listener.dll
+[2023-05-30 08:47:16Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-30 08:47:16Z INFO ConfigurationStore] binPath: C:\time-tracker\actions-runner\bin
+[2023-05-30 08:47:16Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-30 08:47:16Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-30 08:47:16Z INFO ConfigurationStore] RootFolder: C:\time-tracker\actions-runner
+[2023-05-30 08:47:16Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-30 08:47:16Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-30 08:47:16Z INFO HostContext] Well known config file 'Runner': 'C:\time-tracker\actions-runner\.runner'
+[2023-05-30 08:47:16Z INFO ConfigurationStore] ConfigFilePath: C:\time-tracker\actions-runner\.runner
+[2023-05-30 08:47:16Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-30 08:47:16Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-30 08:47:16Z INFO HostContext] Well known config file 'Credentials': 'C:\time-tracker\actions-runner\.credentials'
+[2023-05-30 08:47:16Z INFO ConfigurationStore] CredFilePath: C:\time-tracker\actions-runner\.credentials
+[2023-05-30 08:47:16Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-30 08:47:16Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-30 08:47:16Z INFO HostContext] Well known config file 'MigratedCredentials': 'C:\time-tracker\actions-runner\.credentials_migrated'
+[2023-05-30 08:47:16Z INFO ConfigurationStore] MigratedCredFilePath: C:\time-tracker\actions-runner\.credentials_migrated
+[2023-05-30 08:47:16Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-30 08:47:16Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-30 08:47:16Z INFO HostContext] Well known config file 'Service': 'C:\time-tracker\actions-runner\.service'
+[2023-05-30 08:47:16Z INFO ConfigurationStore] ServiceConfigFilePath: C:\time-tracker\actions-runner\.service
+[2023-05-30 08:47:16Z INFO CommandSettings] Flag 'help': 'False'
+[2023-05-30 08:47:16Z INFO CommandSettings] Flag 'version': 'False'
+[2023-05-30 08:47:16Z INFO CommandSettings] Flag 'commit': 'False'
+[2023-05-30 08:47:16Z INFO CommandSettings] Flag 'check': 'False'
+[2023-05-30 08:47:16Z INFO CommandSettings] Command 'configure': 'False'
+[2023-05-30 08:47:16Z INFO CommandSettings] Command 'remove': 'False'
+[2023-05-30 08:47:16Z INFO CommandSettings] Command 'warmup': 'False'
+[2023-05-30 08:47:16Z INFO ConfigurationManager] LoadSettings
+[2023-05-30 08:47:16Z INFO ConfigurationStore] IsConfigured()
+[2023-05-30 08:47:16Z INFO ConfigurationStore] IsConfigured: True
+[2023-05-30 08:47:16Z INFO ConfigurationManager] Is configured: True
+[2023-05-30 08:47:16Z INFO ConfigurationStore] Read setting file: 302 chars
+[2023-05-30 08:47:16Z INFO ConfigurationManager] Settings Loaded
+[2023-05-30 08:47:16Z INFO ConfigurationStore] IsServiceConfigured()
+[2023-05-30 08:47:16Z INFO ConfigurationStore] IsServiceConfigured: False
+[2023-05-30 08:47:16Z INFO CommandSettings] Command 'run': 'True'
+[2023-05-30 08:47:16Z INFO ConfigurationStore] IsConfigured()
+[2023-05-30 08:47:16Z INFO ConfigurationStore] IsConfigured: True
+[2023-05-30 08:47:16Z INFO ConfigurationManager] Is configured: True
+[2023-05-30 08:47:16Z INFO Runner] Could not parse the argument value '' for StartupType. Defaulting to Manual
+[2023-05-30 08:47:16Z INFO Runner] Set runner startup type - Manual
+[2023-05-30 08:47:16Z INFO CommandSettings] Flag 'once': 'False'
+[2023-05-30 08:47:16Z INFO CommandSettings] Flag 'once': 'False'
+[2023-05-30 08:47:16Z INFO Runner] RunAsync
+[2023-05-30 08:47:16Z INFO ConfigurationManager] LoadSettings
+[2023-05-30 08:47:16Z INFO ConfigurationStore] IsConfigured()
+[2023-05-30 08:47:16Z INFO ConfigurationStore] IsConfigured: True
+[2023-05-30 08:47:16Z INFO ConfigurationManager] Is configured: True
+[2023-05-30 08:47:16Z INFO ConfigurationManager] Settings Loaded
+[2023-05-30 08:47:16Z INFO MessageListener] {
+  "AgentId": 2,
+  "AgentName": "DESKTOP-FCS2CAO",
+  "PoolId": 1,
+  "PoolName": "Default",
+  "ServerUrl": "https://pipelines.actions.githubusercontent.com/4yCUMMnwjiVUyfp6wptLWCOLAo1f3merRRaLvjn4BIbzzClXZG",
+  "GitHubUrl": "https://github.com/Haider531/time-tracker",
+  "WorkFolder": "_work"
+}
+[2023-05-30 08:47:16Z INFO MessageListener] Loading Credentials
+[2023-05-30 08:47:16Z INFO ConfigurationStore] HasCredentials()
+[2023-05-30 08:47:16Z INFO ConfigurationStore] stored True
+[2023-05-30 08:47:16Z INFO CredentialManager] GetCredentialProvider
+[2023-05-30 08:47:16Z INFO CredentialManager] Creating type OAuth
+[2023-05-30 08:47:16Z INFO CredentialManager] Creating credential type: OAuth
+[2023-05-30 08:47:16Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-30 08:47:16Z INFO HostContext] Well known directory 'Root': 'C:\time-tracker\actions-runner'
+[2023-05-30 08:47:16Z INFO HostContext] Well known config file 'RSACredentials': 'C:\time-tracker\actions-runner\.credentials_rsaparams'
+[2023-05-30 08:47:16Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\time-tracker\actions-runner\.credentials_rsaparams
+[2023-05-30 08:47:16Z INFO MessageListener] Attempt to create session.
+[2023-05-30 08:47:16Z INFO MessageListener] Connecting to the Runner Server...
+[2023-05-30 08:47:16Z INFO RunnerServer] EstablishVssConnection
+[2023-05-30 08:47:16Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2023-05-30 08:47:16Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2023-05-30 08:47:16Z INFO RunnerServer] EstablishVssConnection
+[2023-05-30 08:47:16Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2023-05-30 08:47:16Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2023-05-30 08:47:16Z INFO RunnerServer] EstablishVssConnection
+[2023-05-30 08:47:16Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2023-05-30 08:47:16Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2023-05-30 08:47:17Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2023-05-30 08:47:17Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2023-05-30 08:47:17Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2023-05-30 08:47:18Z INFO MessageListener] VssConnection created
+[2023-05-30 08:47:18Z INFO Terminal] WRITE LINE: 
+[2023-05-30 08:47:18Z INFO Terminal] WRITE LINE: 
+[2023-05-30 08:47:18Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\time-tracker\actions-runner\.credentials_rsaparams
+[2023-05-30 08:47:18Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\time-tracker\actions-runner\.credentials_rsaparams
+[2023-05-30 08:47:20Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2023-05-30 08:47:20Z INFO MessageListener] Session created.
+[2023-05-30 08:47:20Z INFO Terminal] WRITE LINE: Current runner version: '2.304.0'
+[2023-05-30 08:47:20Z INFO Terminal] WRITE LINE: 2023-05-30 08:47:20Z: Listening for Jobs
+[2023-05-30 08:47:20Z INFO JobDispatcher] Set runner/worker IPC timeout to 30 seconds.
+[2023-05-30 08:48:50Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\time-tracker\actions-runner\.credentials_rsaparams
+[2023-05-30 08:48:50Z INFO MessageListener] Message '19' received from session '1146330d-a65f-4fe2-a73d-e9df7b94d1da'.
+[2023-05-30 08:48:50Z INFO Runner] Received job message of length 21768 from service, with hash '02f09df80f72d9f48e417ef99e50526bc30a282c09f686959b2ab40c7f69e9e7'
+[2023-05-30 08:48:51Z INFO JobDispatcher] Job request 19 for plan 8478d440-b78a-4c66-a14c-c107d95f8662 job c269f388-e93f-55df-e42c-8ad0a472b48b received.
+[2023-05-30 08:48:51Z INFO JobDispatcher] Pull OrchestrationId 8478d440-b78a-4c66-a14c-c107d95f8662.build._16_x from JWT claims
+[2023-05-30 08:48:51Z INFO Terminal] WRITE LINE: 2023-05-30 08:48:51Z: Running job: build (16.x)
+[2023-05-30 08:48:51Z INFO JobDispatcher] Start renew job request 19 for job c269f388-e93f-55df-e42c-8ad0a472b48b.
+[2023-05-30 08:48:52Z INFO JobDispatcher] Successfully renew job request 19, job is valid till 5/30/2023 8:58:52 AM
+[2023-05-30 08:48:52Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-30 08:48:52Z INFO ProcessInvokerWrapper] Starting process:
+[2023-05-30 08:48:52Z INFO ProcessInvokerWrapper]   File name: 'C:\time-tracker\actions-runner\bin\Runner.Worker.exe'
+[2023-05-30 08:48:52Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 2292 2304'
+[2023-05-30 08:48:52Z INFO ProcessInvokerWrapper]   Working directory: 'C:\time-tracker\actions-runner\bin'
+[2023-05-30 08:48:52Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-05-30 08:48:52Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-05-30 08:48:52Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2023-05-30 08:48:52Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-05-30 08:48:52Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-05-30 08:48:52Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-05-30 08:48:52Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2023-05-30 08:48:52Z INFO ProcessInvokerWrapper] Process started with process id 9148, waiting for process exit.
+[2023-05-30 08:48:52Z INFO JobDispatcher] Send job request message to worker for job c269f388-e93f-55df-e42c-8ad0a472b48b.
+[2023-05-30 08:48:52Z INFO ProcessChannel] Sending message of length 21768, with hash '02f09df80f72d9f48e417ef99e50526bc30a282c09f686959b2ab40c7f69e9e7'
+[2023-05-30 08:48:52Z INFO JobNotification] Entering JobStarted Notification
+[2023-05-30 08:48:52Z INFO JobNotification] Entering StartMonitor
+[2023-05-30 08:49:11Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-05-30 08:49:11Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-05-30 08:49:11Z INFO ProcessInvokerWrapper] Finished process 9148 with exit code 102, and elapsed time 00:00:19.5999202.
+[2023-05-30 08:49:11Z INFO JobDispatcher] Worker finished for job c269f388-e93f-55df-e42c-8ad0a472b48b. Code: 102
+[2023-05-30 08:49:11Z INFO JobDispatcher] finish job request for job c269f388-e93f-55df-e42c-8ad0a472b48b with result: Failed
+[2023-05-30 08:49:11Z INFO Terminal] WRITE LINE: 2023-05-30 08:49:11Z: Job build (16.x) completed with result: Failed
+[2023-05-30 08:49:11Z INFO JobDispatcher] Stop renew job request for job c269f388-e93f-55df-e42c-8ad0a472b48b.
+[2023-05-30 08:49:11Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 19.
+[2023-05-30 08:49:11Z INFO JobNotification] Entering JobCompleted Notification
+[2023-05-30 08:49:11Z INFO JobNotification] Entering EndMonitor
+[2023-05-30 10:08:43Z WARN GitHubActionsService] GET request to https://pipelines.actions.githubusercontent.com/4yCUMMnwjiVUyfp6wptLWCOLAo1f3merRRaLvjn4BIbzzClXZG/_apis/distributedtask/pools/1/messages?sessionId=1146330d-a65f-4fe2-a73d-e9df7b94d1da&lastMessageId=19&status=Online&runnerVersion=2.304.0 timed out after 60 seconds.
+[2023-05-30 10:08:43Z ERR  MessageListener] Catch exception during get next message.
+[2023-05-30 10:08:43Z ERR  MessageListener] System.TimeoutException: The HTTP request timed out after 00:01:00.
+ ---> System.Threading.Tasks.TaskCanceledException: The operation was canceled.
+ ---> System.IO.IOException: Unable to read data from the transport connection: The I/O operation has been aborted because of either a thread exit or an application request..
+ ---> System.Net.Sockets.SocketException (995): The I/O operation has been aborted because of either a thread exit or an application request.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](TIOAdapter adapter, Memory`1 buffer)
+   at System.Net.Http.HttpConnection.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithNtAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean isProxyAuth, HttpConnection connection, HttpConnectionPool connectionPool, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at GitHub.Services.Common.VssHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpRetryMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at GitHub.Services.WebApi.VssHttpClientBase.SendAsync(HttpRequestMessage message, HttpCompletionOption completionOption, Object userState, CancellationToken cancellationToken)
+   at GitHub.Services.WebApi.VssHttpClientBase.SendAsync[T](HttpRequestMessage message, Object userState, CancellationToken cancellationToken)
+   at GitHub.Services.WebApi.VssHttpClientBase.SendAsync[T](HttpMethod method, IEnumerable`1 additionalHeaders, Guid locationId, Object routeValues, ApiResourceVersion version, HttpContent content, IEnumerable`1 queryParameters, Object userState, CancellationToken cancellationToken)
+   at GitHub.Runner.Listener.MessageListener.GetNextMessageAsync(CancellationToken token)
+[2023-05-30 10:08:43Z ERR  MessageListener] #####################################################
+[2023-05-30 10:08:43Z ERR  MessageListener] System.Threading.Tasks.TaskCanceledException: The operation was canceled.
+ ---> System.IO.IOException: Unable to read data from the transport connection: The I/O operation has been aborted because of either a thread exit or an application request..
+ ---> System.Net.Sockets.SocketException (995): The I/O operation has been aborted because of either a thread exit or an application request.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](TIOAdapter adapter, Memory`1 buffer)
+   at System.Net.Http.HttpConnection.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithNtAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean isProxyAuth, HttpConnection connection, HttpConnectionPool connectionPool, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+[2023-05-30 10:08:43Z ERR  MessageListener] #####################################################
+[2023-05-30 10:08:43Z ERR  MessageListener] System.IO.IOException: Unable to read data from the transport connection: The I/O operation has been aborted because of either a thread exit or an application request..
+ ---> System.Net.Sockets.SocketException (995): The I/O operation has been aborted because of either a thread exit or an application request.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](TIOAdapter adapter, Memory`1 buffer)
+   at System.Net.Http.HttpConnection.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+[2023-05-30 10:08:43Z ERR  MessageListener] #####################################################
+[2023-05-30 10:08:43Z ERR  MessageListener] System.Net.Sockets.SocketException (995): The I/O operation has been aborted because of either a thread exit or an application request.
+[2023-05-30 10:08:43Z INFO MessageListener] Retriable exception: The HTTP request timed out after 00:01:00.
+[2023-05-30 10:08:43Z ERR  Terminal] WRITE ERROR: 2023-05-30 10:08:43Z: Runner connect error: The HTTP request timed out after 00:01:00.. Retrying until reconnected.
+[2023-05-30 10:08:43Z INFO RunnerServer] Refresh MessageQueue VssConnection to get on a different AFD node.
+[2023-05-30 10:08:43Z INFO RunnerServer] EstablishVssConnection
+[2023-05-30 10:08:43Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2023-05-30 10:08:43Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2023-05-30 10:08:44Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2023-05-30 10:08:44Z INFO MessageListener] Sleeping for 25.893 seconds before retrying.
+[2023-05-30 10:09:10Z INFO MessageListener] No message retrieved from session '1146330d-a65f-4fe2-a73d-e9df7b94d1da' within last 30 minutes.
+[2023-05-30 10:09:10Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\time-tracker\actions-runner\.credentials_rsaparams
+[2023-05-30 10:09:11Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2023-05-30 10:10:02Z INFO Terminal] WRITE LINE: 2023-05-30 10:10:02Z: Runner reconnected.
