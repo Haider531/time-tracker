@@ -253,3 +253,42 @@
 [2023-05-30 10:19:36Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 20.
 [2023-05-30 10:19:36Z INFO JobNotification] Entering JobCompleted Notification
 [2023-05-30 10:19:36Z INFO JobNotification] Entering EndMonitor
+[2023-05-30 10:40:12Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\time-tracker\actions-runner\.credentials_rsaparams
+[2023-05-30 10:40:12Z INFO MessageListener] Message '21' received from session '1146330d-a65f-4fe2-a73d-e9df7b94d1da'.
+[2023-05-30 10:40:12Z INFO Runner] Received job message of length 21774 from service, with hash 'd882109bd271136f1b894899348a25fbd3955904d8daa1a5372080d8c968e1d7'
+[2023-05-30 10:40:12Z INFO JobDispatcher] Job request 21 for plan e0912ade-3f5e-4f95-8cf7-4da4585188ac job c269f388-e93f-55df-e42c-8ad0a472b48b received.
+[2023-05-30 10:40:12Z INFO JobDispatcher] Pull OrchestrationId e0912ade-3f5e-4f95-8cf7-4da4585188ac.build._16_x from JWT claims
+[2023-05-30 10:40:12Z INFO JobDispatcher] Job request c269f388-e93f-55df-e42c-8ad0a472b48b processed succeed.
+[2023-05-30 10:40:12Z INFO Terminal] WRITE LINE: 2023-05-30 10:40:12Z: Running job: build (16.x)
+[2023-05-30 10:40:12Z INFO JobDispatcher] Start renew job request 21 for job c269f388-e93f-55df-e42c-8ad0a472b48b.
+[2023-05-30 10:40:13Z INFO JobDispatcher] Successfully renew job request 21, job is valid till 5/30/2023 10:50:13 AM
+[2023-05-30 10:40:13Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-30 10:40:13Z INFO ProcessInvokerWrapper] Starting process:
+[2023-05-30 10:40:13Z INFO ProcessInvokerWrapper]   File name: 'C:\time-tracker\actions-runner\bin\Runner.Worker.exe'
+[2023-05-30 10:40:13Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 2512 2524'
+[2023-05-30 10:40:13Z INFO ProcessInvokerWrapper]   Working directory: 'C:\time-tracker\actions-runner\bin'
+[2023-05-30 10:40:13Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-05-30 10:40:13Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-05-30 10:40:13Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2023-05-30 10:40:13Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-05-30 10:40:13Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-05-30 10:40:13Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-05-30 10:40:13Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2023-05-30 10:40:13Z INFO ProcessInvokerWrapper] Process started with process id 21876, waiting for process exit.
+[2023-05-30 10:40:13Z INFO JobDispatcher] Send job request message to worker for job c269f388-e93f-55df-e42c-8ad0a472b48b.
+[2023-05-30 10:40:13Z INFO ProcessChannel] Sending message of length 21774, with hash 'd882109bd271136f1b894899348a25fbd3955904d8daa1a5372080d8c968e1d7'
+[2023-05-30 10:40:13Z INFO JobNotification] Entering JobStarted Notification
+[2023-05-30 10:40:13Z INFO JobNotification] Entering StartMonitor
+[2023-05-30 10:40:29Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-05-30 10:40:29Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-05-30 10:40:29Z INFO ProcessInvokerWrapper] Finished process 21876 with exit code 102, and elapsed time 00:00:16.2698875.
+[2023-05-30 10:40:29Z INFO JobDispatcher] Worker finished for job c269f388-e93f-55df-e42c-8ad0a472b48b. Code: 102
+[2023-05-30 10:40:29Z INFO JobDispatcher] finish job request for job c269f388-e93f-55df-e42c-8ad0a472b48b with result: Failed
+[2023-05-30 10:40:29Z INFO Terminal] WRITE LINE: 2023-05-30 10:40:29Z: Job build (16.x) completed with result: Failed
+[2023-05-30 10:40:29Z INFO JobDispatcher] Stop renew job request for job c269f388-e93f-55df-e42c-8ad0a472b48b.
+[2023-05-30 10:40:29Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 21.
+[2023-05-30 10:40:29Z INFO JobNotification] Entering JobCompleted Notification
+[2023-05-30 10:40:29Z INFO JobNotification] Entering EndMonitor
+[2023-05-30 11:04:34Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\time-tracker\actions-runner\.credentials_rsaparams
+[2023-05-30 11:04:36Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2023-05-30 11:10:29Z INFO MessageListener] No message retrieved from session '1146330d-a65f-4fe2-a73d-e9df7b94d1da' within last 30 minutes.

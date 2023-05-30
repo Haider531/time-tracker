@@ -2,6 +2,3 @@
   path = actions-runner/_work/time-tracker/time-tracker
   url = https://github.com/Haider531/time-tracker.git
 
-[submodule "time-tracker"]
-	path = time-tracker
-	url = https://github.com/Haider531/time-tracker.git
