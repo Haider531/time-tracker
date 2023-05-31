@@ -292,3 +292,655 @@
 [2023-05-30 11:04:34Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\time-tracker\actions-runner\.credentials_rsaparams
 [2023-05-30 11:04:36Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
 [2023-05-30 11:10:29Z INFO MessageListener] No message retrieved from session '1146330d-a65f-4fe2-a73d-e9df7b94d1da' within last 30 minutes.
+[2023-05-30 11:39:05Z WARN GitHubActionsService] Attempt 1 of GET request to https://pipelines.actions.githubusercontent.com/4yCUMMnwjiVUyfp6wptLWCOLAo1f3merRRaLvjn4BIbzzClXZG/_apis/distributedtask/pools/1/messages?sessionId=1146330d-a65f-4fe2-a73d-e9df7b94d1da&lastMessageId=21&status=Online&runnerVersion=2.304.0 failed (HTTP Status: ServiceUnavailable, AFD Ref: Ref A: BB08D0E6FC444756812EB64FFC726E35 Ref B: MIL30EDGE1309 Ref C: 2023-05-30T11:39:02Z). The operation will be retried in 11.175 seconds.
+[2023-05-30 11:39:26Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\time-tracker\actions-runner\.credentials_rsaparams
+[2023-05-30 11:39:26Z INFO MessageListener] Message '22' received from session '1146330d-a65f-4fe2-a73d-e9df7b94d1da'.
+[2023-05-30 11:39:26Z INFO Runner] Received job message of length 21776 from service, with hash '4630857d9b5ea8ac34084177bd6d95b7c8197b244600ac2a414c026747e2a219'
+[2023-05-30 11:39:26Z INFO JobDispatcher] Job request 22 for plan ee215aee-5e46-46fa-ab9a-4a73ebfca63b job c269f388-e93f-55df-e42c-8ad0a472b48b received.
+[2023-05-30 11:39:26Z INFO JobDispatcher] Pull OrchestrationId ee215aee-5e46-46fa-ab9a-4a73ebfca63b.build._16_x from JWT claims
+[2023-05-30 11:39:26Z INFO JobDispatcher] Job request c269f388-e93f-55df-e42c-8ad0a472b48b processed succeed.
+[2023-05-30 11:39:26Z INFO Terminal] WRITE LINE: 2023-05-30 11:39:26Z: Running job: build (16.x)
+[2023-05-30 11:39:26Z INFO JobDispatcher] Start renew job request 22 for job c269f388-e93f-55df-e42c-8ad0a472b48b.
+[2023-05-30 11:39:28Z INFO JobDispatcher] Successfully renew job request 22, job is valid till 5/30/2023 11:49:27 AM
+[2023-05-30 11:39:28Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-30 11:39:28Z INFO ProcessInvokerWrapper] Starting process:
+[2023-05-30 11:39:28Z INFO ProcessInvokerWrapper]   File name: 'C:\time-tracker\actions-runner\bin\Runner.Worker.exe'
+[2023-05-30 11:39:28Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 2268 2192'
+[2023-05-30 11:39:28Z INFO ProcessInvokerWrapper]   Working directory: 'C:\time-tracker\actions-runner\bin'
+[2023-05-30 11:39:28Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-05-30 11:39:28Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-05-30 11:39:28Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2023-05-30 11:39:28Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-05-30 11:39:28Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-05-30 11:39:28Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-05-30 11:39:28Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2023-05-30 11:39:28Z INFO ProcessInvokerWrapper] Process started with process id 15676, waiting for process exit.
+[2023-05-30 11:39:28Z INFO JobDispatcher] Send job request message to worker for job c269f388-e93f-55df-e42c-8ad0a472b48b.
+[2023-05-30 11:39:28Z INFO ProcessChannel] Sending message of length 21776, with hash '4630857d9b5ea8ac34084177bd6d95b7c8197b244600ac2a414c026747e2a219'
+[2023-05-30 11:39:28Z INFO JobNotification] Entering JobStarted Notification
+[2023-05-30 11:39:28Z INFO JobNotification] Entering StartMonitor
+[2023-05-30 11:39:45Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-05-30 11:39:45Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-05-30 11:39:45Z INFO ProcessInvokerWrapper] Finished process 15676 with exit code 102, and elapsed time 00:00:17.1516068.
+[2023-05-30 11:39:45Z INFO JobDispatcher] Worker finished for job c269f388-e93f-55df-e42c-8ad0a472b48b. Code: 102
+[2023-05-30 11:39:45Z INFO JobDispatcher] finish job request for job c269f388-e93f-55df-e42c-8ad0a472b48b with result: Failed
+[2023-05-30 11:39:45Z INFO Terminal] WRITE LINE: 2023-05-30 11:39:45Z: Job build (16.x) completed with result: Failed
+[2023-05-30 11:39:45Z INFO JobDispatcher] Stop renew job request for job c269f388-e93f-55df-e42c-8ad0a472b48b.
+[2023-05-30 11:39:45Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 22.
+[2023-05-30 11:39:45Z INFO JobNotification] Entering JobCompleted Notification
+[2023-05-30 11:39:45Z INFO JobNotification] Entering EndMonitor
+[2023-05-30 11:42:10Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\time-tracker\actions-runner\.credentials_rsaparams
+[2023-05-30 11:42:10Z INFO MessageListener] Message '23' received from session '1146330d-a65f-4fe2-a73d-e9df7b94d1da'.
+[2023-05-30 11:42:10Z INFO Runner] Received job message of length 21792 from service, with hash 'd35a9f76b6cd849397415e1c933329ab1473a72c917410ef56e0b5e2b7618420'
+[2023-05-30 11:42:10Z INFO JobDispatcher] Job request 23 for plan c04d5615-7fbd-47a2-8963-8adeb2d3873c job c269f388-e93f-55df-e42c-8ad0a472b48b received.
+[2023-05-30 11:42:10Z INFO JobDispatcher] Pull OrchestrationId c04d5615-7fbd-47a2-8963-8adeb2d3873c.build._16_x from JWT claims
+[2023-05-30 11:42:10Z INFO JobDispatcher] Job request c269f388-e93f-55df-e42c-8ad0a472b48b processed succeed.
+[2023-05-30 11:42:10Z INFO Terminal] WRITE LINE: 2023-05-30 11:42:10Z: Running job: build (16.x)
+[2023-05-30 11:42:10Z INFO JobDispatcher] Start renew job request 23 for job c269f388-e93f-55df-e42c-8ad0a472b48b.
+[2023-05-30 11:42:11Z INFO JobDispatcher] Successfully renew job request 23, job is valid till 5/30/2023 11:52:11 AM
+[2023-05-30 11:42:11Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-30 11:42:11Z INFO ProcessInvokerWrapper] Starting process:
+[2023-05-30 11:42:11Z INFO ProcessInvokerWrapper]   File name: 'C:\time-tracker\actions-runner\bin\Runner.Worker.exe'
+[2023-05-30 11:42:11Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 1324 2588'
+[2023-05-30 11:42:11Z INFO ProcessInvokerWrapper]   Working directory: 'C:\time-tracker\actions-runner\bin'
+[2023-05-30 11:42:11Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-05-30 11:42:11Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-05-30 11:42:11Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2023-05-30 11:42:11Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-05-30 11:42:11Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-05-30 11:42:11Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-05-30 11:42:11Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2023-05-30 11:42:11Z INFO ProcessInvokerWrapper] Process started with process id 1916, waiting for process exit.
+[2023-05-30 11:42:11Z INFO JobDispatcher] Send job request message to worker for job c269f388-e93f-55df-e42c-8ad0a472b48b.
+[2023-05-30 11:42:11Z INFO ProcessChannel] Sending message of length 21792, with hash 'd35a9f76b6cd849397415e1c933329ab1473a72c917410ef56e0b5e2b7618420'
+[2023-05-30 11:42:12Z INFO JobNotification] Entering JobStarted Notification
+[2023-05-30 11:42:12Z INFO JobNotification] Entering StartMonitor
+[2023-05-30 11:42:27Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-05-30 11:42:27Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-05-30 11:42:27Z INFO ProcessInvokerWrapper] Finished process 1916 with exit code 102, and elapsed time 00:00:15.9633026.
+[2023-05-30 11:42:27Z INFO JobDispatcher] Worker finished for job c269f388-e93f-55df-e42c-8ad0a472b48b. Code: 102
+[2023-05-30 11:42:27Z INFO JobDispatcher] finish job request for job c269f388-e93f-55df-e42c-8ad0a472b48b with result: Failed
+[2023-05-30 11:42:27Z INFO Terminal] WRITE LINE: 2023-05-30 11:42:27Z: Job build (16.x) completed with result: Failed
+[2023-05-30 11:42:27Z INFO JobDispatcher] Stop renew job request for job c269f388-e93f-55df-e42c-8ad0a472b48b.
+[2023-05-30 11:42:27Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 23.
+[2023-05-30 11:42:27Z INFO JobNotification] Entering JobCompleted Notification
+[2023-05-30 11:42:27Z INFO JobNotification] Entering EndMonitor
+[2023-05-30 11:59:50Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\time-tracker\actions-runner\.credentials_rsaparams
+[2023-05-30 11:59:51Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2023-05-30 12:00:48Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\time-tracker\actions-runner\.credentials_rsaparams
+[2023-05-30 12:00:48Z INFO MessageListener] Message '24' received from session '1146330d-a65f-4fe2-a73d-e9df7b94d1da'.
+[2023-05-30 12:00:48Z INFO Runner] Received job message of length 21780 from service, with hash '6727843160f5ebe160907a9ba6a40651f0910be2603bc182b6b3a94b78a54e45'
+[2023-05-30 12:00:48Z INFO JobDispatcher] Job request 24 for plan 9a46e54c-d6c9-47e4-a164-9068e704c3ba job c269f388-e93f-55df-e42c-8ad0a472b48b received.
+[2023-05-30 12:00:48Z INFO JobDispatcher] Pull OrchestrationId 9a46e54c-d6c9-47e4-a164-9068e704c3ba.build._16_x from JWT claims
+[2023-05-30 12:00:48Z INFO JobDispatcher] Job request c269f388-e93f-55df-e42c-8ad0a472b48b processed succeed.
+[2023-05-30 12:00:48Z INFO Terminal] WRITE LINE: 2023-05-30 12:00:48Z: Running job: build (16.x)
+[2023-05-30 12:00:48Z INFO JobDispatcher] Start renew job request 24 for job c269f388-e93f-55df-e42c-8ad0a472b48b.
+[2023-05-30 12:00:49Z INFO JobDispatcher] Successfully renew job request 24, job is valid till 5/30/2023 12:10:49 PM
+[2023-05-30 12:00:49Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-30 12:00:49Z INFO ProcessInvokerWrapper] Starting process:
+[2023-05-30 12:00:49Z INFO ProcessInvokerWrapper]   File name: 'C:\time-tracker\actions-runner\bin\Runner.Worker.exe'
+[2023-05-30 12:00:49Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 2360 2504'
+[2023-05-30 12:00:49Z INFO ProcessInvokerWrapper]   Working directory: 'C:\time-tracker\actions-runner\bin'
+[2023-05-30 12:00:49Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-05-30 12:00:49Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-05-30 12:00:49Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2023-05-30 12:00:49Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-05-30 12:00:49Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-05-30 12:00:49Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-05-30 12:00:49Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2023-05-30 12:00:49Z INFO ProcessInvokerWrapper] Process started with process id 2500, waiting for process exit.
+[2023-05-30 12:00:49Z INFO JobDispatcher] Send job request message to worker for job c269f388-e93f-55df-e42c-8ad0a472b48b.
+[2023-05-30 12:00:49Z INFO ProcessChannel] Sending message of length 21780, with hash '6727843160f5ebe160907a9ba6a40651f0910be2603bc182b6b3a94b78a54e45'
+[2023-05-30 12:00:49Z INFO JobNotification] Entering JobStarted Notification
+[2023-05-30 12:00:49Z INFO JobNotification] Entering StartMonitor
+[2023-05-30 12:01:08Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-05-30 12:01:08Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-05-30 12:01:08Z INFO ProcessInvokerWrapper] Finished process 2500 with exit code 102, and elapsed time 00:00:19.2607554.
+[2023-05-30 12:01:08Z INFO JobDispatcher] Worker finished for job c269f388-e93f-55df-e42c-8ad0a472b48b. Code: 102
+[2023-05-30 12:01:08Z INFO JobDispatcher] finish job request for job c269f388-e93f-55df-e42c-8ad0a472b48b with result: Failed
+[2023-05-30 12:01:08Z INFO Terminal] WRITE LINE: 2023-05-30 12:01:08Z: Job build (16.x) completed with result: Failed
+[2023-05-30 12:01:08Z INFO JobDispatcher] Stop renew job request for job c269f388-e93f-55df-e42c-8ad0a472b48b.
+[2023-05-30 12:01:08Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 24.
+[2023-05-30 12:01:08Z INFO JobNotification] Entering JobCompleted Notification
+[2023-05-30 12:01:08Z INFO JobNotification] Entering EndMonitor
+[2023-05-30 12:06:00Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\time-tracker\actions-runner\.credentials_rsaparams
+[2023-05-30 12:06:00Z INFO MessageListener] Message '25' received from session '1146330d-a65f-4fe2-a73d-e9df7b94d1da'.
+[2023-05-30 12:06:00Z INFO Runner] Received job message of length 21786 from service, with hash 'a5471c10df1fd96e7058c436da50362bf46858fd682b39df9099092be7ba098a'
+[2023-05-30 12:06:00Z INFO JobDispatcher] Job request 25 for plan b48ac646-ec1b-4806-9b13-3ad16684d878 job c269f388-e93f-55df-e42c-8ad0a472b48b received.
+[2023-05-30 12:06:00Z INFO JobDispatcher] Pull OrchestrationId b48ac646-ec1b-4806-9b13-3ad16684d878.build._16_x from JWT claims
+[2023-05-30 12:06:00Z INFO JobDispatcher] Job request c269f388-e93f-55df-e42c-8ad0a472b48b processed succeed.
+[2023-05-30 12:06:00Z INFO Terminal] WRITE LINE: 2023-05-30 12:06:00Z: Running job: build (16.x)
+[2023-05-30 12:06:00Z INFO JobDispatcher] Start renew job request 25 for job c269f388-e93f-55df-e42c-8ad0a472b48b.
+[2023-05-30 12:06:01Z INFO JobDispatcher] Successfully renew job request 25, job is valid till 5/30/2023 12:16:01 PM
+[2023-05-30 12:06:01Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-30 12:06:01Z INFO ProcessInvokerWrapper] Starting process:
+[2023-05-30 12:06:01Z INFO ProcessInvokerWrapper]   File name: 'C:\time-tracker\actions-runner\bin\Runner.Worker.exe'
+[2023-05-30 12:06:01Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 2444 1792'
+[2023-05-30 12:06:01Z INFO ProcessInvokerWrapper]   Working directory: 'C:\time-tracker\actions-runner\bin'
+[2023-05-30 12:06:01Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-05-30 12:06:01Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-05-30 12:06:01Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2023-05-30 12:06:01Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-05-30 12:06:01Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-05-30 12:06:01Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-05-30 12:06:01Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2023-05-30 12:06:01Z INFO ProcessInvokerWrapper] Process started with process id 8016, waiting for process exit.
+[2023-05-30 12:06:01Z INFO JobDispatcher] Send job request message to worker for job c269f388-e93f-55df-e42c-8ad0a472b48b.
+[2023-05-30 12:06:01Z INFO ProcessChannel] Sending message of length 21786, with hash 'a5471c10df1fd96e7058c436da50362bf46858fd682b39df9099092be7ba098a'
+[2023-05-30 12:06:02Z INFO JobNotification] Entering JobStarted Notification
+[2023-05-30 12:06:02Z INFO JobNotification] Entering StartMonitor
+[2023-05-30 12:06:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-05-30 12:06:22Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-05-30 12:06:22Z INFO ProcessInvokerWrapper] Finished process 8016 with exit code 102, and elapsed time 00:00:20.6879253.
+[2023-05-30 12:06:22Z INFO JobDispatcher] Worker finished for job c269f388-e93f-55df-e42c-8ad0a472b48b. Code: 102
+[2023-05-30 12:06:22Z INFO JobDispatcher] finish job request for job c269f388-e93f-55df-e42c-8ad0a472b48b with result: Failed
+[2023-05-30 12:06:22Z INFO Terminal] WRITE LINE: 2023-05-30 12:06:22Z: Job build (16.x) completed with result: Failed
+[2023-05-30 12:06:22Z INFO JobDispatcher] Stop renew job request for job c269f388-e93f-55df-e42c-8ad0a472b48b.
+[2023-05-30 12:06:22Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 25.
+[2023-05-30 12:06:22Z INFO JobNotification] Entering JobCompleted Notification
+[2023-05-30 12:06:22Z INFO JobNotification] Entering EndMonitor
+[2023-05-30 12:27:03Z WARN GitHubActionsService] GET request to https://pipelines.actions.githubusercontent.com/4yCUMMnwjiVUyfp6wptLWCOLAo1f3merRRaLvjn4BIbzzClXZG/_apis/distributedtask/pools/1/messages?sessionId=1146330d-a65f-4fe2-a73d-e9df7b94d1da&lastMessageId=25&status=Online&runnerVersion=2.304.0 timed out after 60 seconds.
+[2023-05-30 12:27:03Z ERR  MessageListener] Catch exception during get next message.
+[2023-05-30 12:27:03Z ERR  MessageListener] System.TimeoutException: The HTTP request timed out after 00:01:00.
+ ---> System.Threading.Tasks.TaskCanceledException: The operation was canceled.
+ ---> System.IO.IOException: Unable to read data from the transport connection: The I/O operation has been aborted because of either a thread exit or an application request..
+ ---> System.Net.Sockets.SocketException (995): The I/O operation has been aborted because of either a thread exit or an application request.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](TIOAdapter adapter, Memory`1 buffer)
+   at System.Net.Http.HttpConnection.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithNtAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean isProxyAuth, HttpConnection connection, HttpConnectionPool connectionPool, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at GitHub.Services.Common.VssHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpRetryMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at GitHub.Services.WebApi.VssHttpClientBase.SendAsync(HttpRequestMessage message, HttpCompletionOption completionOption, Object userState, CancellationToken cancellationToken)
+   at GitHub.Services.WebApi.VssHttpClientBase.SendAsync[T](HttpRequestMessage message, Object userState, CancellationToken cancellationToken)
+   at GitHub.Services.WebApi.VssHttpClientBase.SendAsync[T](HttpMethod method, IEnumerable`1 additionalHeaders, Guid locationId, Object routeValues, ApiResourceVersion version, HttpContent content, IEnumerable`1 queryParameters, Object userState, CancellationToken cancellationToken)
+   at GitHub.Runner.Listener.MessageListener.GetNextMessageAsync(CancellationToken token)
+[2023-05-30 12:27:03Z ERR  MessageListener] #####################################################
+[2023-05-30 12:27:03Z ERR  MessageListener] System.Threading.Tasks.TaskCanceledException: The operation was canceled.
+ ---> System.IO.IOException: Unable to read data from the transport connection: The I/O operation has been aborted because of either a thread exit or an application request..
+ ---> System.Net.Sockets.SocketException (995): The I/O operation has been aborted because of either a thread exit or an application request.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](TIOAdapter adapter, Memory`1 buffer)
+   at System.Net.Http.HttpConnection.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithNtAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean isProxyAuth, HttpConnection connection, HttpConnectionPool connectionPool, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+[2023-05-30 12:27:03Z ERR  MessageListener] #####################################################
+[2023-05-30 12:27:03Z ERR  MessageListener] System.IO.IOException: Unable to read data from the transport connection: The I/O operation has been aborted because of either a thread exit or an application request..
+ ---> System.Net.Sockets.SocketException (995): The I/O operation has been aborted because of either a thread exit or an application request.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](TIOAdapter adapter, Memory`1 buffer)
+   at System.Net.Http.HttpConnection.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+[2023-05-30 12:27:03Z ERR  MessageListener] #####################################################
+[2023-05-30 12:27:03Z ERR  MessageListener] System.Net.Sockets.SocketException (995): The I/O operation has been aborted because of either a thread exit or an application request.
+[2023-05-30 12:27:03Z INFO MessageListener] Retriable exception: The HTTP request timed out after 00:01:00.
+[2023-05-30 12:27:03Z ERR  Terminal] WRITE ERROR: 2023-05-30 12:27:03Z: Runner connect error: The HTTP request timed out after 00:01:00.. Retrying until reconnected.
+[2023-05-30 12:27:03Z INFO RunnerServer] Refresh MessageQueue VssConnection to get on a different AFD node.
+[2023-05-30 12:27:03Z INFO RunnerServer] EstablishVssConnection
+[2023-05-30 12:27:03Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2023-05-30 12:27:03Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2023-05-30 12:27:04Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2023-05-30 12:27:04Z INFO MessageListener] Sleeping for 28.273 seconds before retrying.
+[2023-05-30 12:28:23Z INFO Terminal] WRITE LINE: 2023-05-30 12:28:23Z: Runner reconnected.
+[2023-05-30 12:30:26Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\time-tracker\actions-runner\.credentials_rsaparams
+[2023-05-30 12:30:26Z INFO MessageListener] Message '26' received from session '1146330d-a65f-4fe2-a73d-e9df7b94d1da'.
+[2023-05-30 12:30:26Z INFO Runner] Received job message of length 21786 from service, with hash 'a3f819b8d749fc1616423f6a1a87e7bf3c24763f2cac067fc3f484ab7256e2ac'
+[2023-05-30 12:30:26Z INFO JobDispatcher] Job request 26 for plan 463781ad-cf91-4ad0-8e68-ef284a972bee job c269f388-e93f-55df-e42c-8ad0a472b48b received.
+[2023-05-30 12:30:26Z INFO JobDispatcher] Pull OrchestrationId 463781ad-cf91-4ad0-8e68-ef284a972bee.build._16_x from JWT claims
+[2023-05-30 12:30:26Z INFO JobDispatcher] Job request c269f388-e93f-55df-e42c-8ad0a472b48b processed succeed.
+[2023-05-30 12:30:26Z INFO Terminal] WRITE LINE: 2023-05-30 12:30:26Z: Running job: build (16.x)
+[2023-05-30 12:30:26Z INFO JobDispatcher] Start renew job request 26 for job c269f388-e93f-55df-e42c-8ad0a472b48b.
+[2023-05-30 12:30:27Z INFO JobDispatcher] Successfully renew job request 26, job is valid till 5/30/2023 12:40:26 PM
+[2023-05-30 12:30:27Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-30 12:30:27Z INFO ProcessInvokerWrapper] Starting process:
+[2023-05-30 12:30:27Z INFO ProcessInvokerWrapper]   File name: 'C:\time-tracker\actions-runner\bin\Runner.Worker.exe'
+[2023-05-30 12:30:27Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 1548 1740'
+[2023-05-30 12:30:27Z INFO ProcessInvokerWrapper]   Working directory: 'C:\time-tracker\actions-runner\bin'
+[2023-05-30 12:30:27Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-05-30 12:30:27Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-05-30 12:30:27Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2023-05-30 12:30:27Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-05-30 12:30:27Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-05-30 12:30:27Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-05-30 12:30:27Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2023-05-30 12:30:27Z INFO ProcessInvokerWrapper] Process started with process id 22068, waiting for process exit.
+[2023-05-30 12:30:27Z INFO JobDispatcher] Send job request message to worker for job c269f388-e93f-55df-e42c-8ad0a472b48b.
+[2023-05-30 12:30:27Z INFO ProcessChannel] Sending message of length 21786, with hash 'a3f819b8d749fc1616423f6a1a87e7bf3c24763f2cac067fc3f484ab7256e2ac'
+[2023-05-30 12:30:27Z INFO JobNotification] Entering JobStarted Notification
+[2023-05-30 12:30:27Z INFO JobNotification] Entering StartMonitor
+[2023-05-30 12:30:48Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-05-30 12:30:48Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-05-30 12:30:48Z INFO ProcessInvokerWrapper] Finished process 22068 with exit code 102, and elapsed time 00:00:21.7730800.
+[2023-05-30 12:30:48Z INFO JobDispatcher] Worker finished for job c269f388-e93f-55df-e42c-8ad0a472b48b. Code: 102
+[2023-05-30 12:30:48Z INFO JobDispatcher] finish job request for job c269f388-e93f-55df-e42c-8ad0a472b48b with result: Failed
+[2023-05-30 12:30:48Z INFO Terminal] WRITE LINE: 2023-05-30 12:30:48Z: Job build (16.x) completed with result: Failed
+[2023-05-30 12:30:48Z INFO JobDispatcher] Stop renew job request for job c269f388-e93f-55df-e42c-8ad0a472b48b.
+[2023-05-30 12:30:48Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 26.
+[2023-05-30 12:30:48Z INFO JobNotification] Entering JobCompleted Notification
+[2023-05-30 12:30:48Z INFO JobNotification] Entering EndMonitor
+[2023-05-30 12:31:42Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\time-tracker\actions-runner\.credentials_rsaparams
+[2023-05-30 12:31:42Z INFO MessageListener] Message '27' received from session '1146330d-a65f-4fe2-a73d-e9df7b94d1da'.
+[2023-05-30 12:31:42Z INFO Runner] Received job message of length 21530 from service, with hash '62aee23c27e0841618fdda373a744b4b5bf09fcbbc66085c7f05109f7ca499c0'
+[2023-05-30 12:31:42Z INFO JobDispatcher] Job request 27 for plan e52009ab-7187-4b1e-96e3-993e402b7a40 job c269f388-e93f-55df-e42c-8ad0a472b48b received.
+[2023-05-30 12:31:42Z INFO JobDispatcher] Pull OrchestrationId e52009ab-7187-4b1e-96e3-993e402b7a40.build._16_x from JWT claims
+[2023-05-30 12:31:42Z INFO JobDispatcher] Job request c269f388-e93f-55df-e42c-8ad0a472b48b processed succeed.
+[2023-05-30 12:31:42Z INFO Terminal] WRITE LINE: 2023-05-30 12:31:42Z: Running job: build (16.x)
+[2023-05-30 12:31:42Z INFO JobDispatcher] Start renew job request 27 for job c269f388-e93f-55df-e42c-8ad0a472b48b.
+[2023-05-30 12:31:43Z INFO JobDispatcher] Successfully renew job request 27, job is valid till 5/30/2023 12:41:42 PM
+[2023-05-30 12:31:43Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-30 12:31:43Z INFO ProcessInvokerWrapper] Starting process:
+[2023-05-30 12:31:43Z INFO ProcessInvokerWrapper]   File name: 'C:\time-tracker\actions-runner\bin\Runner.Worker.exe'
+[2023-05-30 12:31:43Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 2404 2636'
+[2023-05-30 12:31:43Z INFO ProcessInvokerWrapper]   Working directory: 'C:\time-tracker\actions-runner\bin'
+[2023-05-30 12:31:43Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-05-30 12:31:43Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-05-30 12:31:43Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2023-05-30 12:31:43Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-05-30 12:31:43Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-05-30 12:31:43Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-05-30 12:31:43Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2023-05-30 12:31:43Z INFO ProcessInvokerWrapper] Process started with process id 1444, waiting for process exit.
+[2023-05-30 12:31:43Z INFO JobDispatcher] Send job request message to worker for job c269f388-e93f-55df-e42c-8ad0a472b48b.
+[2023-05-30 12:31:43Z INFO ProcessChannel] Sending message of length 21530, with hash '62aee23c27e0841618fdda373a744b4b5bf09fcbbc66085c7f05109f7ca499c0'
+[2023-05-30 12:31:43Z INFO JobNotification] Entering JobStarted Notification
+[2023-05-30 12:31:43Z INFO JobNotification] Entering StartMonitor
+[2023-05-30 12:32:15Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-05-30 12:32:15Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-05-30 12:32:15Z INFO ProcessInvokerWrapper] Finished process 1444 with exit code 102, and elapsed time 00:00:32.0472476.
+[2023-05-30 12:32:15Z INFO JobDispatcher] Worker finished for job c269f388-e93f-55df-e42c-8ad0a472b48b. Code: 102
+[2023-05-30 12:32:15Z INFO JobDispatcher] finish job request for job c269f388-e93f-55df-e42c-8ad0a472b48b with result: Failed
+[2023-05-30 12:32:15Z INFO Terminal] WRITE LINE: 2023-05-30 12:32:15Z: Job build (16.x) completed with result: Failed
+[2023-05-30 12:32:15Z INFO JobDispatcher] Stop renew job request for job c269f388-e93f-55df-e42c-8ad0a472b48b.
+[2023-05-30 12:32:15Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 27.
+[2023-05-30 12:32:15Z INFO JobNotification] Entering JobCompleted Notification
+[2023-05-30 12:32:15Z INFO JobNotification] Entering EndMonitor
+[2023-05-30 12:34:52Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\time-tracker\actions-runner\.credentials_rsaparams
+[2023-05-30 12:34:52Z INFO MessageListener] Message '28' received from session '1146330d-a65f-4fe2-a73d-e9df7b94d1da'.
+[2023-05-30 12:34:52Z INFO Runner] Received job message of length 21780 from service, with hash '947b8e1b8ce2481d16661dad3d369bd95e8788c52c2d86a02bfed16946227973'
+[2023-05-30 12:34:52Z INFO JobDispatcher] Job request 28 for plan 3b8bed8e-a765-4fab-adb0-b4aa7901ef9c job c269f388-e93f-55df-e42c-8ad0a472b48b received.
+[2023-05-30 12:34:52Z INFO JobDispatcher] Pull OrchestrationId 3b8bed8e-a765-4fab-adb0-b4aa7901ef9c.build._16_x from JWT claims
+[2023-05-30 12:34:52Z INFO JobDispatcher] Job request c269f388-e93f-55df-e42c-8ad0a472b48b processed succeed.
+[2023-05-30 12:34:52Z INFO Terminal] WRITE LINE: 2023-05-30 12:34:52Z: Running job: build (16.x)
+[2023-05-30 12:34:52Z INFO JobDispatcher] Start renew job request 28 for job c269f388-e93f-55df-e42c-8ad0a472b48b.
+[2023-05-30 12:34:54Z INFO JobDispatcher] Successfully renew job request 28, job is valid till 5/30/2023 12:44:53 PM
+[2023-05-30 12:34:54Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-30 12:34:54Z INFO ProcessInvokerWrapper] Starting process:
+[2023-05-30 12:34:54Z INFO ProcessInvokerWrapper]   File name: 'C:\time-tracker\actions-runner\bin\Runner.Worker.exe'
+[2023-05-30 12:34:54Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 2580 2268'
+[2023-05-30 12:34:54Z INFO ProcessInvokerWrapper]   Working directory: 'C:\time-tracker\actions-runner\bin'
+[2023-05-30 12:34:54Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-05-30 12:34:54Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-05-30 12:34:54Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2023-05-30 12:34:54Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-05-30 12:34:54Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-05-30 12:34:54Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-05-30 12:34:54Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2023-05-30 12:34:54Z INFO ProcessInvokerWrapper] Process started with process id 21832, waiting for process exit.
+[2023-05-30 12:34:54Z INFO JobDispatcher] Send job request message to worker for job c269f388-e93f-55df-e42c-8ad0a472b48b.
+[2023-05-30 12:34:54Z INFO ProcessChannel] Sending message of length 21780, with hash '947b8e1b8ce2481d16661dad3d369bd95e8788c52c2d86a02bfed16946227973'
+[2023-05-30 12:34:54Z INFO JobNotification] Entering JobStarted Notification
+[2023-05-30 12:34:54Z INFO JobNotification] Entering StartMonitor
+[2023-05-30 12:35:13Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-05-30 12:35:13Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-05-30 12:35:13Z INFO ProcessInvokerWrapper] Finished process 21832 with exit code 102, and elapsed time 00:00:19.6084226.
+[2023-05-30 12:35:13Z INFO JobDispatcher] Worker finished for job c269f388-e93f-55df-e42c-8ad0a472b48b. Code: 102
+[2023-05-30 12:35:13Z INFO JobDispatcher] finish job request for job c269f388-e93f-55df-e42c-8ad0a472b48b with result: Failed
+[2023-05-30 12:35:13Z INFO Terminal] WRITE LINE: 2023-05-30 12:35:13Z: Job build (16.x) completed with result: Failed
+[2023-05-30 12:35:13Z INFO JobDispatcher] Stop renew job request for job c269f388-e93f-55df-e42c-8ad0a472b48b.
+[2023-05-30 12:35:13Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 28.
+[2023-05-30 12:35:13Z INFO JobNotification] Entering JobCompleted Notification
+[2023-05-30 12:35:13Z INFO JobNotification] Entering EndMonitor
+[2023-05-30 12:55:03Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\time-tracker\actions-runner\.credentials_rsaparams
+[2023-05-30 12:55:05Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2023-05-30 13:10:21Z WARN GitHubActionsService] GET request to https://pipelines.actions.githubusercontent.com/4yCUMMnwjiVUyfp6wptLWCOLAo1f3merRRaLvjn4BIbzzClXZG/_apis/distributedtask/pools/1/messages?sessionId=1146330d-a65f-4fe2-a73d-e9df7b94d1da&lastMessageId=28&status=Online&runnerVersion=2.304.0 timed out after 60 seconds.
+[2023-05-30 13:10:21Z ERR  MessageListener] Catch exception during get next message.
+[2023-05-30 13:10:21Z ERR  MessageListener] System.TimeoutException: The HTTP request timed out after 00:01:00.
+ ---> System.Threading.Tasks.TaskCanceledException: The operation was canceled.
+ ---> System.IO.IOException: Unable to read data from the transport connection: The I/O operation has been aborted because of either a thread exit or an application request..
+ ---> System.Net.Sockets.SocketException (995): The I/O operation has been aborted because of either a thread exit or an application request.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](TIOAdapter adapter, Memory`1 buffer)
+   at System.Net.Http.HttpConnection.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithNtAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean isProxyAuth, HttpConnection connection, HttpConnectionPool connectionPool, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at GitHub.Services.Common.VssHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpRetryMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at GitHub.Services.WebApi.VssHttpClientBase.SendAsync(HttpRequestMessage message, HttpCompletionOption completionOption, Object userState, CancellationToken cancellationToken)
+   at GitHub.Services.WebApi.VssHttpClientBase.SendAsync[T](HttpRequestMessage message, Object userState, CancellationToken cancellationToken)
+   at GitHub.Services.WebApi.VssHttpClientBase.SendAsync[T](HttpMethod method, IEnumerable`1 additionalHeaders, Guid locationId, Object routeValues, ApiResourceVersion version, HttpContent content, IEnumerable`1 queryParameters, Object userState, CancellationToken cancellationToken)
+   at GitHub.Runner.Listener.MessageListener.GetNextMessageAsync(CancellationToken token)
+[2023-05-30 13:10:21Z ERR  MessageListener] #####################################################
+[2023-05-30 13:10:21Z ERR  MessageListener] System.Threading.Tasks.TaskCanceledException: The operation was canceled.
+ ---> System.IO.IOException: Unable to read data from the transport connection: The I/O operation has been aborted because of either a thread exit or an application request..
+ ---> System.Net.Sockets.SocketException (995): The I/O operation has been aborted because of either a thread exit or an application request.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](TIOAdapter adapter, Memory`1 buffer)
+   at System.Net.Http.HttpConnection.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithNtAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean isProxyAuth, HttpConnection connection, HttpConnectionPool connectionPool, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+[2023-05-30 13:10:21Z ERR  MessageListener] #####################################################
+[2023-05-30 13:10:21Z ERR  MessageListener] System.IO.IOException: Unable to read data from the transport connection: The I/O operation has been aborted because of either a thread exit or an application request..
+ ---> System.Net.Sockets.SocketException (995): The I/O operation has been aborted because of either a thread exit or an application request.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](TIOAdapter adapter, Memory`1 buffer)
+   at System.Net.Http.HttpConnection.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+[2023-05-30 13:10:21Z ERR  MessageListener] #####################################################
+[2023-05-30 13:10:21Z ERR  MessageListener] System.Net.Sockets.SocketException (995): The I/O operation has been aborted because of either a thread exit or an application request.
+[2023-05-30 13:10:21Z INFO MessageListener] Retriable exception: The HTTP request timed out after 00:01:00.
+[2023-05-30 13:10:21Z ERR  Terminal] WRITE ERROR: 2023-05-30 13:10:21Z: Runner connect error: The HTTP request timed out after 00:01:00.. Retrying until reconnected.
+[2023-05-30 13:10:21Z INFO RunnerServer] Refresh MessageQueue VssConnection to get on a different AFD node.
+[2023-05-30 13:10:21Z INFO RunnerServer] EstablishVssConnection
+[2023-05-30 13:10:21Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2023-05-30 13:10:21Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2023-05-30 13:10:22Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2023-05-30 13:10:22Z INFO MessageListener] Sleeping for 18.857 seconds before retrying.
+[2023-05-30 13:10:41Z INFO MessageListener] No message retrieved from session '1146330d-a65f-4fe2-a73d-e9df7b94d1da' within last 30 minutes.
+[2023-05-30 13:11:32Z INFO Terminal] WRITE LINE: 2023-05-30 13:11:32Z: Runner reconnected.
+[2023-05-30 13:31:53Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\time-tracker\actions-runner\.credentials_rsaparams
+[2023-05-30 13:31:53Z INFO MessageListener] Message '29' received from session '1146330d-a65f-4fe2-a73d-e9df7b94d1da'.
+[2023-05-30 13:31:53Z INFO Runner] Received job message of length 21546 from service, with hash 'f6321cbbc83bf120e7674d04ef36e2a9b54ce7499560dca92b3c0ba2bb5a43f6'
+[2023-05-30 13:31:53Z INFO JobDispatcher] Job request 29 for plan 944d3880-ec43-4e06-84f1-3d7d25755448 job c269f388-e93f-55df-e42c-8ad0a472b48b received.
+[2023-05-30 13:31:53Z INFO JobDispatcher] Pull OrchestrationId 944d3880-ec43-4e06-84f1-3d7d25755448.build._16_x from JWT claims
+[2023-05-30 13:31:53Z INFO JobDispatcher] Job request c269f388-e93f-55df-e42c-8ad0a472b48b processed succeed.
+[2023-05-30 13:31:53Z INFO Terminal] WRITE LINE: 2023-05-30 13:31:53Z: Running job: build (16.x)
+[2023-05-30 13:31:53Z INFO JobDispatcher] Start renew job request 29 for job c269f388-e93f-55df-e42c-8ad0a472b48b.
+[2023-05-30 13:31:54Z INFO JobDispatcher] Successfully renew job request 29, job is valid till 5/30/2023 1:41:53 PM
+[2023-05-30 13:31:54Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-30 13:31:54Z INFO ProcessInvokerWrapper] Starting process:
+[2023-05-30 13:31:54Z INFO ProcessInvokerWrapper]   File name: 'C:\time-tracker\actions-runner\bin\Runner.Worker.exe'
+[2023-05-30 13:31:54Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 2608 2660'
+[2023-05-30 13:31:54Z INFO ProcessInvokerWrapper]   Working directory: 'C:\time-tracker\actions-runner\bin'
+[2023-05-30 13:31:54Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-05-30 13:31:54Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-05-30 13:31:54Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2023-05-30 13:31:54Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-05-30 13:31:54Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-05-30 13:31:54Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-05-30 13:31:54Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2023-05-30 13:31:54Z INFO ProcessInvokerWrapper] Process started with process id 20892, waiting for process exit.
+[2023-05-30 13:31:54Z INFO JobDispatcher] Send job request message to worker for job c269f388-e93f-55df-e42c-8ad0a472b48b.
+[2023-05-30 13:31:54Z INFO ProcessChannel] Sending message of length 21546, with hash 'f6321cbbc83bf120e7674d04ef36e2a9b54ce7499560dca92b3c0ba2bb5a43f6'
+[2023-05-30 13:31:54Z INFO JobNotification] Entering JobStarted Notification
+[2023-05-30 13:31:54Z INFO JobNotification] Entering StartMonitor
+[2023-05-30 13:32:12Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-05-30 13:32:12Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-05-30 13:32:12Z INFO ProcessInvokerWrapper] Finished process 20892 with exit code 102, and elapsed time 00:00:18.5860122.
+[2023-05-30 13:32:12Z INFO JobDispatcher] Worker finished for job c269f388-e93f-55df-e42c-8ad0a472b48b. Code: 102
+[2023-05-30 13:32:12Z INFO JobDispatcher] finish job request for job c269f388-e93f-55df-e42c-8ad0a472b48b with result: Failed
+[2023-05-30 13:32:12Z INFO Terminal] WRITE LINE: 2023-05-30 13:32:12Z: Job build (16.x) completed with result: Failed
+[2023-05-30 13:32:12Z INFO JobDispatcher] Stop renew job request for job c269f388-e93f-55df-e42c-8ad0a472b48b.
+[2023-05-30 13:32:12Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 29.
+[2023-05-30 13:32:12Z INFO JobNotification] Entering JobCompleted Notification
+[2023-05-30 13:32:12Z INFO JobNotification] Entering EndMonitor
+[2023-05-30 13:34:21Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\time-tracker\actions-runner\.credentials_rsaparams
+[2023-05-30 13:34:22Z INFO MessageListener] Message '30' received from session '1146330d-a65f-4fe2-a73d-e9df7b94d1da'.
+[2023-05-30 13:34:22Z INFO Runner] Received job message of length 21546 from service, with hash '50fabd11802d18e3e87993e6eab82072f2c28e1ee0acae0cc774bcba2bd50ef3'
+[2023-05-30 13:34:22Z INFO JobDispatcher] Job request 30 for plan a9c4bd40-267b-49f5-b9f9-bf911003dd87 job c269f388-e93f-55df-e42c-8ad0a472b48b received.
+[2023-05-30 13:34:22Z INFO JobDispatcher] Pull OrchestrationId a9c4bd40-267b-49f5-b9f9-bf911003dd87.build._16_x from JWT claims
+[2023-05-30 13:34:22Z INFO JobDispatcher] Job request c269f388-e93f-55df-e42c-8ad0a472b48b processed succeed.
+[2023-05-30 13:34:22Z INFO Terminal] WRITE LINE: 2023-05-30 13:34:22Z: Running job: build (16.x)
+[2023-05-30 13:34:22Z INFO JobDispatcher] Start renew job request 30 for job c269f388-e93f-55df-e42c-8ad0a472b48b.
+[2023-05-30 13:34:23Z INFO JobDispatcher] Successfully renew job request 30, job is valid till 5/30/2023 1:44:22 PM
+[2023-05-30 13:34:23Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-30 13:34:23Z INFO ProcessInvokerWrapper] Starting process:
+[2023-05-30 13:34:23Z INFO ProcessInvokerWrapper]   File name: 'C:\time-tracker\actions-runner\bin\Runner.Worker.exe'
+[2023-05-30 13:34:23Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 1564 2660'
+[2023-05-30 13:34:23Z INFO ProcessInvokerWrapper]   Working directory: 'C:\time-tracker\actions-runner\bin'
+[2023-05-30 13:34:23Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-05-30 13:34:23Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-05-30 13:34:23Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2023-05-30 13:34:23Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-05-30 13:34:23Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-05-30 13:34:23Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-05-30 13:34:23Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2023-05-30 13:34:23Z INFO ProcessInvokerWrapper] Process started with process id 11304, waiting for process exit.
+[2023-05-30 13:34:23Z INFO JobDispatcher] Send job request message to worker for job c269f388-e93f-55df-e42c-8ad0a472b48b.
+[2023-05-30 13:34:23Z INFO ProcessChannel] Sending message of length 21546, with hash '50fabd11802d18e3e87993e6eab82072f2c28e1ee0acae0cc774bcba2bd50ef3'
+[2023-05-30 13:34:23Z INFO JobNotification] Entering JobStarted Notification
+[2023-05-30 13:34:23Z INFO JobNotification] Entering StartMonitor
+[2023-05-30 13:34:52Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-05-30 13:34:52Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-05-30 13:34:53Z INFO ProcessInvokerWrapper] Finished process 11304 with exit code 102, and elapsed time 00:00:29.6595728.
+[2023-05-30 13:34:53Z INFO JobDispatcher] Worker finished for job c269f388-e93f-55df-e42c-8ad0a472b48b. Code: 102
+[2023-05-30 13:34:53Z INFO JobDispatcher] finish job request for job c269f388-e93f-55df-e42c-8ad0a472b48b with result: Failed
+[2023-05-30 13:34:53Z INFO Terminal] WRITE LINE: 2023-05-30 13:34:53Z: Job build (16.x) completed with result: Failed
+[2023-05-30 13:34:53Z INFO JobDispatcher] Stop renew job request for job c269f388-e93f-55df-e42c-8ad0a472b48b.
+[2023-05-30 13:34:53Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 30.
+[2023-05-30 13:34:53Z INFO JobNotification] Entering JobCompleted Notification
+[2023-05-30 13:34:53Z INFO JobNotification] Entering EndMonitor
+[2023-05-30 13:50:21Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\time-tracker\actions-runner\.credentials_rsaparams
+[2023-05-30 13:50:22Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2023-05-30 13:59:02Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\time-tracker\actions-runner\.credentials_rsaparams
+[2023-05-30 13:59:02Z INFO MessageListener] Message '31' received from session '1146330d-a65f-4fe2-a73d-e9df7b94d1da'.
+[2023-05-30 13:59:02Z INFO Runner] Received job message of length 21536 from service, with hash '5f3566f15b37c6b74d18c9a9eeaf89186e6725ed3f854d42449eb435c0c02f71'
+[2023-05-30 13:59:02Z INFO JobDispatcher] Job request 31 for plan 1c61229c-c1c9-467f-b7a1-d3c204b3489b job c269f388-e93f-55df-e42c-8ad0a472b48b received.
+[2023-05-30 13:59:02Z INFO JobDispatcher] Pull OrchestrationId 1c61229c-c1c9-467f-b7a1-d3c204b3489b.build._16_x from JWT claims
+[2023-05-30 13:59:02Z INFO JobDispatcher] Job request c269f388-e93f-55df-e42c-8ad0a472b48b processed succeed.
+[2023-05-30 13:59:02Z INFO Terminal] WRITE LINE: 2023-05-30 13:59:02Z: Running job: build (16.x)
+[2023-05-30 13:59:02Z INFO JobDispatcher] Start renew job request 31 for job c269f388-e93f-55df-e42c-8ad0a472b48b.
+[2023-05-30 13:59:04Z INFO JobDispatcher] Successfully renew job request 31, job is valid till 5/30/2023 2:09:04 PM
+[2023-05-30 13:59:04Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-30 13:59:04Z INFO ProcessInvokerWrapper] Starting process:
+[2023-05-30 13:59:04Z INFO ProcessInvokerWrapper]   File name: 'C:\time-tracker\actions-runner\bin\Runner.Worker.exe'
+[2023-05-30 13:59:04Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 2952 1324'
+[2023-05-30 13:59:04Z INFO ProcessInvokerWrapper]   Working directory: 'C:\time-tracker\actions-runner\bin'
+[2023-05-30 13:59:04Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-05-30 13:59:04Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-05-30 13:59:04Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2023-05-30 13:59:04Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-05-30 13:59:04Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-05-30 13:59:04Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-05-30 13:59:04Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2023-05-30 13:59:04Z INFO ProcessInvokerWrapper] Process started with process id 18008, waiting for process exit.
+[2023-05-30 13:59:04Z INFO JobDispatcher] Send job request message to worker for job c269f388-e93f-55df-e42c-8ad0a472b48b.
+[2023-05-30 13:59:04Z INFO ProcessChannel] Sending message of length 21536, with hash '5f3566f15b37c6b74d18c9a9eeaf89186e6725ed3f854d42449eb435c0c02f71'
+[2023-05-30 13:59:05Z INFO JobNotification] Entering JobStarted Notification
+[2023-05-30 13:59:05Z INFO JobNotification] Entering StartMonitor
+[2023-05-30 13:59:33Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-05-30 13:59:33Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-05-30 13:59:33Z INFO ProcessInvokerWrapper] Finished process 18008 with exit code 102, and elapsed time 00:00:28.5903303.
+[2023-05-30 13:59:33Z INFO JobDispatcher] Worker finished for job c269f388-e93f-55df-e42c-8ad0a472b48b. Code: 102
+[2023-05-30 13:59:33Z INFO JobDispatcher] finish job request for job c269f388-e93f-55df-e42c-8ad0a472b48b with result: Failed
+[2023-05-30 13:59:33Z INFO Terminal] WRITE LINE: 2023-05-30 13:59:33Z: Job build (16.x) completed with result: Failed
+[2023-05-30 13:59:33Z INFO JobDispatcher] Stop renew job request for job c269f388-e93f-55df-e42c-8ad0a472b48b.
+[2023-05-30 13:59:33Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 31.
+[2023-05-30 13:59:33Z INFO JobNotification] Entering JobCompleted Notification
+[2023-05-30 13:59:33Z INFO JobNotification] Entering EndMonitor
+[2023-05-30 14:06:22Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\time-tracker\actions-runner\.credentials_rsaparams
+[2023-05-30 14:06:22Z INFO MessageListener] Message '32' received from session '1146330d-a65f-4fe2-a73d-e9df7b94d1da'.
+[2023-05-30 14:06:22Z INFO Runner] Received job message of length 21530 from service, with hash '5354dbc77d5c90c2dfccb6d9b4e6df1071d6f5798cf3700185dfca3f203dba52'
+[2023-05-30 14:06:22Z INFO JobDispatcher] Job request 32 for plan f1035f1c-7bf1-4aef-92da-27a98f86d9bc job c269f388-e93f-55df-e42c-8ad0a472b48b received.
+[2023-05-30 14:06:22Z INFO JobDispatcher] Pull OrchestrationId f1035f1c-7bf1-4aef-92da-27a98f86d9bc.build._16_x from JWT claims
+[2023-05-30 14:06:22Z INFO JobDispatcher] Job request c269f388-e93f-55df-e42c-8ad0a472b48b processed succeed.
+[2023-05-30 14:06:22Z INFO Terminal] WRITE LINE: 2023-05-30 14:06:22Z: Running job: build (16.x)
+[2023-05-30 14:06:22Z INFO JobDispatcher] Start renew job request 32 for job c269f388-e93f-55df-e42c-8ad0a472b48b.
+[2023-05-30 14:06:24Z INFO JobDispatcher] Successfully renew job request 32, job is valid till 5/30/2023 2:16:23 PM
+[2023-05-30 14:06:24Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-30 14:06:24Z INFO ProcessInvokerWrapper] Starting process:
+[2023-05-30 14:06:24Z INFO ProcessInvokerWrapper]   File name: 'C:\time-tracker\actions-runner\bin\Runner.Worker.exe'
+[2023-05-30 14:06:24Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 3060 3004'
+[2023-05-30 14:06:24Z INFO ProcessInvokerWrapper]   Working directory: 'C:\time-tracker\actions-runner\bin'
+[2023-05-30 14:06:24Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-05-30 14:06:24Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-05-30 14:06:24Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2023-05-30 14:06:24Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-05-30 14:06:24Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-05-30 14:06:24Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-05-30 14:06:24Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2023-05-30 14:06:24Z INFO ProcessInvokerWrapper] Process started with process id 1244, waiting for process exit.
+[2023-05-30 14:06:24Z INFO JobDispatcher] Send job request message to worker for job c269f388-e93f-55df-e42c-8ad0a472b48b.
+[2023-05-30 14:06:24Z INFO ProcessChannel] Sending message of length 21530, with hash '5354dbc77d5c90c2dfccb6d9b4e6df1071d6f5798cf3700185dfca3f203dba52'
+[2023-05-30 14:06:24Z INFO JobNotification] Entering JobStarted Notification
+[2023-05-30 14:06:24Z INFO JobNotification] Entering StartMonitor
+[2023-05-30 14:06:56Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-05-30 14:06:56Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-05-30 14:06:56Z INFO ProcessInvokerWrapper] Finished process 1244 with exit code 102, and elapsed time 00:00:31.9323886.
+[2023-05-30 14:06:56Z INFO JobDispatcher] Worker finished for job c269f388-e93f-55df-e42c-8ad0a472b48b. Code: 102
+[2023-05-30 14:06:56Z INFO JobDispatcher] finish job request for job c269f388-e93f-55df-e42c-8ad0a472b48b with result: Failed
+[2023-05-30 14:06:56Z INFO Terminal] WRITE LINE: 2023-05-30 14:06:56Z: Job build (16.x) completed with result: Failed
+[2023-05-30 14:06:56Z INFO JobDispatcher] Stop renew job request for job c269f388-e93f-55df-e42c-8ad0a472b48b.
+[2023-05-30 14:06:56Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 32.
+[2023-05-30 14:06:56Z INFO JobNotification] Entering JobCompleted Notification
+[2023-05-30 14:06:56Z INFO JobNotification] Entering EndMonitor
+[2023-05-30 14:20:26Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\time-tracker\actions-runner\.credentials_rsaparams
+[2023-05-30 14:20:26Z INFO MessageListener] Message '33' received from session '1146330d-a65f-4fe2-a73d-e9df7b94d1da'.
+[2023-05-30 14:20:26Z INFO Runner] Received job message of length 21266 from service, with hash '3fd8bae3b943cef5e77ce7835b119a65437221d107bbf65c266d29ed4130031e'
+[2023-05-30 14:20:26Z INFO JobDispatcher] Job request 33 for plan ce66473b-18c5-4192-8ee2-20450a95812b job c269f388-e93f-55df-e42c-8ad0a472b48b received.
+[2023-05-30 14:20:26Z INFO JobDispatcher] Pull OrchestrationId ce66473b-18c5-4192-8ee2-20450a95812b.build._16_x from JWT claims
+[2023-05-30 14:20:26Z INFO JobDispatcher] Job request c269f388-e93f-55df-e42c-8ad0a472b48b processed succeed.
+[2023-05-30 14:20:26Z INFO Terminal] WRITE LINE: 2023-05-30 14:20:26Z: Running job: build (16.x)
+[2023-05-30 14:20:26Z INFO JobDispatcher] Start renew job request 33 for job c269f388-e93f-55df-e42c-8ad0a472b48b.
+[2023-05-30 14:20:27Z INFO JobDispatcher] Successfully renew job request 33, job is valid till 5/30/2023 2:30:27 PM
+[2023-05-30 14:20:27Z INFO HostContext] Well known directory 'Bin': 'C:\time-tracker\actions-runner\bin'
+[2023-05-30 14:20:27Z INFO ProcessInvokerWrapper] Starting process:
+[2023-05-30 14:20:27Z INFO ProcessInvokerWrapper]   File name: 'C:\time-tracker\actions-runner\bin\Runner.Worker.exe'
+[2023-05-30 14:20:27Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 2768 2744'
+[2023-05-30 14:20:27Z INFO ProcessInvokerWrapper]   Working directory: 'C:\time-tracker\actions-runner\bin'
+[2023-05-30 14:20:27Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2023-05-30 14:20:27Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2023-05-30 14:20:27Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2023-05-30 14:20:27Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2023-05-30 14:20:27Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2023-05-30 14:20:27Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2023-05-30 14:20:27Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2023-05-30 14:20:27Z INFO ProcessInvokerWrapper] Process started with process id 10856, waiting for process exit.
+[2023-05-30 14:20:27Z INFO JobDispatcher] Send job request message to worker for job c269f388-e93f-55df-e42c-8ad0a472b48b.
+[2023-05-30 14:20:27Z INFO ProcessChannel] Sending message of length 21266, with hash '3fd8bae3b943cef5e77ce7835b119a65437221d107bbf65c266d29ed4130031e'
+[2023-05-30 14:20:28Z INFO JobNotification] Entering JobStarted Notification
+[2023-05-30 14:20:28Z INFO JobNotification] Entering StartMonitor
+[2023-05-30 14:21:28Z INFO JobDispatcher] Successfully renew job request 33, job is valid till 5/30/2023 2:31:27 PM
+[2023-05-30 14:22:28Z INFO JobDispatcher] Successfully renew job request 33, job is valid till 5/30/2023 2:32:28 PM
+[2023-05-30 14:23:28Z INFO JobDispatcher] Successfully renew job request 33, job is valid till 5/30/2023 2:33:28 PM
+[2023-05-30 14:24:29Z INFO JobDispatcher] Successfully renew job request 33, job is valid till 5/30/2023 2:34:28 PM
+[2023-05-30 14:25:30Z INFO JobDispatcher] Successfully renew job request 33, job is valid till 5/30/2023 2:35:29 PM
+[2023-05-30 14:26:32Z INFO JobDispatcher] Successfully renew job request 33, job is valid till 5/30/2023 2:36:30 PM
+[2023-05-30 14:27:01Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-05-30 14:27:01Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2023-05-30 14:27:01Z INFO ProcessInvokerWrapper] Finished process 10856 with exit code 100, and elapsed time 00:06:33.4115350.
+[2023-05-30 14:27:01Z INFO JobDispatcher] Worker finished for job c269f388-e93f-55df-e42c-8ad0a472b48b. Code: 100
+[2023-05-30 14:27:01Z INFO JobDispatcher] finish job request for job c269f388-e93f-55df-e42c-8ad0a472b48b with result: Succeeded
+[2023-05-30 14:27:01Z INFO Terminal] WRITE LINE: 2023-05-30 14:27:01Z: Job build (16.x) completed with result: Succeeded
+[2023-05-30 14:27:01Z INFO JobDispatcher] Stop renew job request for job c269f388-e93f-55df-e42c-8ad0a472b48b.
+[2023-05-30 14:27:01Z INFO JobDispatcher] job renew has been cancelled, stop renew job request 33.
+[2023-05-30 14:27:01Z INFO JobNotification] Entering JobCompleted Notification
+[2023-05-30 14:27:01Z INFO JobNotification] Entering EndMonitor
+[2023-05-30 14:40:38Z WARN GitHubActionsService] GET request to https://pipelines.actions.githubusercontent.com/4yCUMMnwjiVUyfp6wptLWCOLAo1f3merRRaLvjn4BIbzzClXZG/_apis/distributedtask/pools/1/messages?sessionId=1146330d-a65f-4fe2-a73d-e9df7b94d1da&lastMessageId=33&status=Online&runnerVersion=2.304.0 timed out after 60 seconds.
+[2023-05-30 14:40:38Z ERR  MessageListener] Catch exception during get next message.
+[2023-05-30 14:40:38Z ERR  MessageListener] System.TimeoutException: The HTTP request timed out after 00:01:00.
+ ---> System.Threading.Tasks.TaskCanceledException: The operation was canceled.
+ ---> System.IO.IOException: Unable to read data from the transport connection: The I/O operation has been aborted because of either a thread exit or an application request..
+ ---> System.Net.Sockets.SocketException (995): The I/O operation has been aborted because of either a thread exit or an application request.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](TIOAdapter adapter, Memory`1 buffer)
+   at System.Net.Http.HttpConnection.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithNtAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean isProxyAuth, HttpConnection connection, HttpConnectionPool connectionPool, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at GitHub.Services.Common.VssHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpRetryMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at GitHub.Services.WebApi.VssHttpClientBase.SendAsync(HttpRequestMessage message, HttpCompletionOption completionOption, Object userState, CancellationToken cancellationToken)
+   at GitHub.Services.WebApi.VssHttpClientBase.SendAsync[T](HttpRequestMessage message, Object userState, CancellationToken cancellationToken)
+   at GitHub.Services.WebApi.VssHttpClientBase.SendAsync[T](HttpMethod method, IEnumerable`1 additionalHeaders, Guid locationId, Object routeValues, ApiResourceVersion version, HttpContent content, IEnumerable`1 queryParameters, Object userState, CancellationToken cancellationToken)
+   at GitHub.Runner.Listener.MessageListener.GetNextMessageAsync(CancellationToken token)
+[2023-05-30 14:40:38Z ERR  MessageListener] #####################################################
+[2023-05-30 14:40:38Z ERR  MessageListener] System.Threading.Tasks.TaskCanceledException: The operation was canceled.
+ ---> System.IO.IOException: Unable to read data from the transport connection: The I/O operation has been aborted because of either a thread exit or an application request..
+ ---> System.Net.Sockets.SocketException (995): The I/O operation has been aborted because of either a thread exit or an application request.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](TIOAdapter adapter, Memory`1 buffer)
+   at System.Net.Http.HttpConnection.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithNtAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean isProxyAuth, HttpConnection connection, HttpConnectionPool connectionPool, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.AuthenticationHelper.SendWithAuthAsync(HttpRequestMessage request, Uri authUri, Boolean async, ICredentials credentials, Boolean preAuthenticate, Boolean isProxyAuth, Boolean doRequestAuth, HttpConnectionPool pool, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at GitHub.Services.Common.VssHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+[2023-05-30 14:40:38Z ERR  MessageListener] #####################################################
+[2023-05-30 14:40:38Z ERR  MessageListener] System.IO.IOException: Unable to read data from the transport connection: The I/O operation has been aborted because of either a thread exit or an application request..
+ ---> System.Net.Sockets.SocketException (995): The I/O operation has been aborted because of either a thread exit or an application request.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+   at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](TIOAdapter adapter, Memory`1 buffer)
+   at System.Net.Http.HttpConnection.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+[2023-05-30 14:40:38Z ERR  MessageListener] #####################################################
+[2023-05-30 14:40:38Z ERR  MessageListener] System.Net.Sockets.SocketException (995): The I/O operation has been aborted because of either a thread exit or an application request.
+[2023-05-30 14:40:38Z INFO MessageListener] Retriable exception: The HTTP request timed out after 00:01:00.
+[2023-05-30 14:40:38Z ERR  Terminal] WRITE ERROR: 2023-05-30 14:40:38Z: Runner connect error: The HTTP request timed out after 00:01:00.. Retrying until reconnected.
+[2023-05-30 14:40:38Z INFO RunnerServer] Refresh MessageQueue VssConnection to get on a different AFD node.
+[2023-05-30 14:40:38Z INFO RunnerServer] EstablishVssConnection
+[2023-05-30 14:40:38Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2023-05-30 14:40:38Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2023-05-30 14:40:40Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2023-05-30 14:40:40Z INFO MessageListener] Sleeping for 16.505 seconds before retrying.
+[2023-05-30 14:41:47Z INFO Terminal] WRITE LINE: 2023-05-30 14:41:47Z: Runner reconnected.
+[2023-05-30 14:45:59Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\time-tracker\actions-runner\.credentials_rsaparams
+[2023-05-30 14:46:01Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2023-05-30 14:46:01Z WARN GitHubActionsService] Retrieving an AAD auth token took a long time (2.3799994 seconds)
+[2023-05-30 14:51:03Z INFO MessageListener] No message retrieved from session '1146330d-a65f-4fe2-a73d-e9df7b94d1da' within last 30 minutes.
+[2023-05-30 15:21:16Z INFO MessageListener] No message retrieved from session '1146330d-a65f-4fe2-a73d-e9df7b94d1da' within last 30 minutes.
+[2023-05-30 15:41:25Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\time-tracker\actions-runner\.credentials_rsaparams
+[2023-05-30 15:41:27Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2023-05-30 15:48:37Z INFO HostContext] Runner will be shutdown for UserCancelled
+[2023-05-30 15:48:37Z WARN GitHubActionsService] GET request to https://pipelines.actions.githubusercontent.com/4yCUMMnwjiVUyfp6wptLWCOLAo1f3merRRaLvjn4BIbzzClXZG/_apis/distributedtask/pools/1/messages?sessionId=1146330d-a65f-4fe2-a73d-e9df7b94d1da&lastMessageId=33&status=Online&runnerVersion=2.304.0 has been cancelled.
+[2023-05-30 15:48:37Z INFO MessageListener] Get next message has been cancelled.
+[2023-05-30 15:48:37Z INFO JobDispatcher] Shutting down JobDispatcher. Make sure all WorkerDispatcher has finished.
+[2023-05-30 15:48:37Z INFO JobDispatcher] Ensure WorkerDispather for job c269f388-e93f-55df-e42c-8ad0a472b48b run to finish, cancel any running job.
+[2023-05-30 15:48:37Z INFO JobDispatcher] Job request c269f388-e93f-55df-e42c-8ad0a472b48b processed succeed.
+[2023-05-30 15:48:38Z INFO Listener] Runner execution been cancelled.
